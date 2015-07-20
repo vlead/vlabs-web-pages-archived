@@ -72,10 +72,10 @@ a.active {
 {
   background: url("../images/search-box.png") no-repeat;
   border: 0 none;
-  color: #888;
+  color: #666666;
   float: left;
-  font-family: Arial MT;
-  font-size: 1.1em;
+  font-family: Calibri;
+  font-size: 15px;
   height: 36px;
   margin: 0;
   padding-left: 15px;
@@ -105,9 +105,9 @@ a.active {
 
 .menu-a
 {
-	font-size: 1.3em !important;
-	font-family: Arial MT !important;
-  color: #2C99CE !important;
+	font-size: 18px !important;
+	font-family: Calibri !important;
+  color: #2C99CD !important;
   padding-left: 10px !important;
   padding-bottom: 5px !important;
   padding-top: 5px !important;
@@ -123,6 +123,7 @@ a.active {
 .menu-li
 {
 	/* float: right; */
+	border-radius: 10px;
  	margin-left: 20px;
 	margin-right: 20px; 
 }
@@ -367,6 +368,12 @@ a.active {
 }
 /*************************************************************/
 
+.featured-labs-div
+{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	padding-left: 15px !important;
+}
 .border-bottom-img
 {
 	 /*  border-bottom: 2px dotted;
@@ -393,11 +400,17 @@ a.active {
 	border-right: 2px dotted;
 	 margin-top: 30px;
 	 border-right-color: #678f48;
+	 min-height: 115px;
 }
 
 a:focus
 {
 	color: #72AB44 !important;
+}
+
+.featured-labs
+{
+	min-height: 208px !important;
 }
 /*========================font classes=======================*/
 .text-h2-lightblue
@@ -459,6 +472,12 @@ a:focus
 }
 
 .text-normal-gray-smallest
+{
+	color: #888;
+	font-size: 13px;
+}
+
+.featured-labs-icon-text
 {
 	color: #888;
 	font-size: 13px;
