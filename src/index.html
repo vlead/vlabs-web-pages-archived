@@ -22,6 +22,15 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+<script type="text/javascript" language="javascript">
+         //$(document).ready(function() {
+         window.onload = function() {
+               $.getJSON('http://stats.virtual-labs.ac.in/numberofhits', function(data) {
+                       $("#analytics").html(data);
+               });
+         };
+</script>
+
 
 </head>
 
@@ -52,7 +61,9 @@
 			                <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
 			                	<li>
 			                		<form method="post">
-			                        	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB"/>
+
+
+			                        	<input type="text" class="search-textbox" />
 			                        	<input type="submit" value="" class="search-button" />
 			                        </form>
 			                	</li>
@@ -89,20 +100,23 @@
 					<img src="images/banner_img.jpg" class="img-responsive" />
 					<div class="banner-text"> 
 						<div class="baneer-text-sub-div banner-text-1">
-							<span class="banner-text-small">Labs</span> <span class="banner-text-big">750</span> <sup class="banner-text-medium">+</sup> 
+							<span class="banner-text-small">Labs</span> <span class="banner-text-big">205</span> <sup class="banner-text-medium">+</sup> 
 						</div>
 						
 						<div class="baneer-text-sub-div banner-text-2">
-							<span class="banner-text-small">Accessed</span> <span class="banner-text-big">17.23m</span> <sup class="banner-text-medium">+</sup> 
+							<span class="banner-text-small">Experiments</span> <span  class="banner-text-big">1515</span> <sup class="banner-text-medium">+</sup> 
 						</div>
+						<!-- <div class="baneer-text-sub-div banner-text-2">
+							<span class="banner-text-small">Accessed</span> <span id="analytics" class="banner-text-big"></span> <sup class="banner-text-medium">+</sup> 
+						</div> -->
 						
 						<div class="baneer-text-sub-div banner-text-3">
-							<span class="banner-text-small">Students</span> <span class="banner-text-big">750</span> <sup class="banner-text-medium">+</sup> 
+							<span class="banner-text-small">Visitors</span> <span id="analytics" class="banner-text-big"></span> <sup class="banner-text-medium">+</sup> 
 						</div>
 						
-						<div class="baneer-text-sub-div banner-text-4">
+<!-- 						<div class="baneer-text-sub-div banner-text-4">
 							<span class="banner-text-small">Institutions</span> <span class="banner-text-big">1784</span> <sup class="banner-text-medium">+</sup> 
-						</div>
+						</div> -->
 						
 					</div>
 					
@@ -131,7 +145,7 @@
 											<tr> 
 												<td valign="bottom">
 													<div class="text-normal-gray-smallest" style="min-height:1px; float: left; padding-right:15px;  padding-left: 0px;">
-														 <a href="http://coep.vlab.co.in/?sub=28&brch=81" target="_blank" class="nounderline">  <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">EXPERIMENT</span></a>
+														 <a href="http://coep.vlab.co.in/?sub=28&brch=81" target="_blank" class="nounderline">  <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">LAB</span></a>
 													</div> 
 												</td>
 												<td valign="bottom">
@@ -154,7 +168,7 @@
 											<tr>
 												<td valign="bottom">
 													<div class="text-normal-gray-smallest" style="min-height:1px; float: left; padding-right:15px;  padding-left: 0px;">
-														 <a href="http://cse01-iiith.vlabs.ac.in/" target="_blank" class="nounderline"> <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">EXPERIMENT</span></a>
+														 <a href="http://cse01-iiith.vlabs.ac.in/" target="_blank" class="nounderline"> <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">LAB</span></a>
 													</div> 
 												</td>
 												<td valign="bottom">
@@ -178,7 +192,7 @@
 											<tr>
 												<td valign="bottom">
 													<div class="text-normal-gray-smallest" style="min-height:1px; float: left; padding-right:15px;  padding-left: 0px;">
-														<a href="http://vem-iitg.vlabs.ac.in/" target="_blank" class="nounderline"> <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">EXPERIMENT</span></a>
+														<a href="http://vem-iitg.vlabs.ac.in/" target="_blank" class="nounderline"> <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">LAB</span></a>
 													</div> 
 												</td>
 												<td valign="bottom">
@@ -202,7 +216,7 @@
 											<tr>
 												<td valign="bottom">
 													<div class="text-normal-gray-smallest" style="min-height:1px; float: left; padding-right:15px;  padding-left: 0px;">
-														 <a href="http://msvs-dei.vlabs.ac.in/" target="_blank" class="nounderline"> <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">EXPERIMENT</span></a>
+														 <a href="http://msvs-dei.vlabs.ac.in/" target="_blank" class="nounderline"> <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">LAB</span></a>
 													</div> 
 												</td>
 												<td valign="bottom">
@@ -226,7 +240,7 @@
 											<tr>
 												<td valign="bottom">
 													<div class="text-normal-gray-smallest" style="min-height:1px; float: left; padding-right:15px;  padding-left: 0px;">
-														 <a href="http://uorepc-nitk.vlabs.ac.in/" target="_blank" class="nounderline"> <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">EXPERIMENT</span></a>
+														 <a href="http://uorepc-nitk.vlabs.ac.in/" target="_blank" class="nounderline"> <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">LAB</span></a>
 													</div> 
 												</td>
 												<td valign="bottom">
@@ -250,7 +264,7 @@
 											<tr>
 												<td valign="bottom">
 													<div class="text-normal-gray-smallest" style="min-height:1px; float: left; padding-right:15px;  padding-left: 0px;">
-														 <a href="http://vlab.amrita.edu/?sub=3&brch=63" target="_blank" class="nounderline"> <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">EXPERIMENT</span></a>
+														 <a href="http://vlab.amrita.edu/?sub=3&brch=63" target="_blank" class="nounderline"> <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">LAB</span></a>
 													</div> 
 												</td>
 												<td valign="bottom">
@@ -273,7 +287,7 @@
 											<tr>
 												<td valign="bottom">
 													<div class="text-normal-gray-smallest" style="min-height:1px; float: left; padding-right:15px;  padding-left: 0px;">
-														 <a href="http://vlab.amrita.edu/?sub=1&brch=201" target="_blank" class="nounderline"> <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">EXPERIMENT</span></a>
+														 <a href="http://vlab.amrita.edu/?sub=1&brch=201" target="_blank" class="nounderline"> <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">LAB</span></a>
 													</div> 
 												</td>
 												<td valign="bottom">
@@ -297,7 +311,7 @@
 											<tr>
 												<td valign="bottom">
 													<div class="text-normal-gray-smallest" style="min-height:1px; float: left; padding-right:15px;  padding-left: 0px;">
-														 <a href="http://csc-iiith.vlabs.ac.in/" target="_blank" class="nounderline"> <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">EXPERIMENT</span></a>
+														 <a href="http://csc-iiith.vlabs.ac.in/" target="_blank" class="nounderline"> <span class="featured-labs-experiment-icon"> <img src="images/flask.png" style="vertical-align:text-bottom; width: 23px;" /> </span> <span  class="text-normal-gray-smallest">LAB</span></a>
 													</div> 
 												</td>
 												<td valign="bottom">
