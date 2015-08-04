@@ -447,13 +447,18 @@ a:focus
 .featured-labs
 {
 	min-height: 208px !important;
+	/*overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+ 	-webkit-line-clamp: 3;
+ 	-webkit-box-orient: vertical;*/
 }
 /*========================font classes=======================*/
 .text-h2-lightblue
 {
 	color: #2C99CE;
 	font-size: 1.8em;
-	
+	margin-left: 0.6em;
 }
 
 .text-a-lightgreen
@@ -726,6 +731,7 @@ a:focus
 .banner-caption-text
 {
 	font-size: 2.0em;	
+	text-align: left;
 	line-height: normal;
 	color: black;
 }
