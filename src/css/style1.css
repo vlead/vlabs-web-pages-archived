@@ -456,13 +456,14 @@ a:focus
  	-webkit-line-clamp: 3;
  	-webkit-box-orient: vertical;*/
 }
+
+
 /*========================font classes=======================*/
 .text-h2-lightblue
 {
 	color: #2C99CE;
-	font-size: 1.8em;
+	font-size: 20px;
 	margin-left: 0.8em;
-	font-size: 1.2em;
 }
 
 .text-a-lightgreen
@@ -493,8 +494,8 @@ a:focus
 
 .text-h3-darkblue-bold
 {
-	color: #3e6389;
-	font-size: 1em;
+	color: #003366;
+	font-size: 15px;
 	font-weight: normal;
 }
 
@@ -506,8 +507,8 @@ a:focus
 
 .text-normal-gray-small
 {
-	color: #888;
-	font-size: 12px;
+	color: #999999;
+	font-size: 13px;
 }
 
 .text-normal-gray-big
@@ -518,8 +519,8 @@ a:focus
 
 .text-normal-gray-smallest
 {
-	color: #888;
-	font-size: 13px;
+	color: #999999;
+	font-size: 11px;
 }
 
 .featured-labs-icon-text
@@ -685,7 +686,7 @@ a:focus
 
 .banner-text-small
 {
-	font-size: 1.7em;
+	font-size: 18px;
 }
 
 .banner-text-medium
@@ -728,18 +729,14 @@ a:focus
 {
   position: absolute;
   top: 140px;
-  left: 3.7%;	
+  left: 40%;	
   width: 150%;
 }
 
 .banner-caption-text
 {
-<<<<<<< HEAD
-	font-size: 2.0em;	
-	text-align: left;
-=======
-	font-size: 1.2em;	
->>>>>>> f3b4f22ca1ec6639cf95185650d5427a8bca30ee
+	font-size: 20.4px;	
+	text-align: left;	
 	line-height: normal;
 	color: black;
 	
