@@ -156,7 +156,7 @@ a.active {
 
 .menu-ul
 {
-	margin-top: 45px;
+	margin-top: 52px;
 }
 
 @media only screen and (max-width: 375px) {
@@ -403,6 +403,9 @@ a.active {
   padding-left: 15px;
 }
 /*************************************************************/
+.row-container-height{
+	height:180px;
+}
 
 .featured-labs-div
 {
@@ -457,8 +460,13 @@ a:focus
 .text-h2-lightblue
 {
 	color: #2C99CE;
+<<<<<<< HEAD
 	font-size: 1.8em;
 	margin-left: 0.6em;
+=======
+	font-size: 1.2em;
+	
+>>>>>>> f3b4f22ca1ec6639cf95185650d5427a8bca30ee
 }
 
 .text-a-lightgreen
@@ -490,8 +498,8 @@ a:focus
 .text-h3-darkblue-bold
 {
 	color: #3e6389;
-	font-size: 1.4em;
-	font-weight: bold;
+	font-size: 1em;
+	font-weight: normal;
 }
 
 .text-h3-darkblue
@@ -503,7 +511,7 @@ a:focus
 .text-normal-gray-small
 {
 	color: #888;
-	font-size: 16px;
+	font-size: 12px;
 }
 
 .text-normal-gray-big
@@ -724,16 +732,21 @@ a:focus
 {
   position: absolute;
   top: 140px;
-  left: 42%;	
+  left: 3.7%;	
   width: 150%;
 }
 
 .banner-caption-text
 {
+<<<<<<< HEAD
 	font-size: 2.0em;	
 	text-align: left;
+=======
+	font-size: 1.2em;	
+>>>>>>> f3b4f22ca1ec6639cf95185650d5427a8bca30ee
 	line-height: normal;
 	color: black;
+	
 }
 
 
