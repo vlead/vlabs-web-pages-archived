@@ -22,7 +22,7 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-	<script type="text/javascript" src = 'sortLinks.js'></script>
+	
 </head>
 <body id="page-top" class="index">
 <div id="top">
@@ -46,8 +46,8 @@
 			               
 			                <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
 			                	<li>
-			                		<form method="post">
-			                        	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB"/>
+			                		<form method="get" action="search-result.html">
+			                        	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB" name="q" id="q"/>
 			                        	<input type="submit" value="" class="search-button" />
 			                        </form>
 			                	</li>
@@ -55,18 +55,16 @@
 			                
 			                <ul class="nav navbar-nav navbar-right menu-ul">
 			                    <li class="page-scroll menu-li " >
-			                        <a href="index.html#aboutus" class="menu-a" >HOME</a>
+			                        <a href="index.html" class="menu-a" >HOME</a>
 			                    </li>
 			                    <li class="page-scroll menu-li menu-li-active">
 			                        <a href="labs.html"  class="menu-a menu-a-active" >ALL LABS</a>
 			                    </li>
-<!-- 			                    <li class="page-scroll menu-li">
-			                        <a href="#signin"  class="menu-a" >SIGN IN</a>
-			                    </li> -->
-			                     <li class="page-scroll menu-li search-form-li">
-			                        
+			                    <li class="page-scroll menu-li " >
+			                        <a href="index.html#partner" class="menu-a" >PARTNERS</a>
+			                    </li><li class="page-scroll menu-li " >
+			                        <a href="index.html#contact" class="menu-a" >CONTACT</a>
 			                    </li>
-			                    
 			                </ul>
 			                
 			               
@@ -103,7 +101,7 @@
 							<a href="chemical-sciences-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Chemical Sciences</h3></a>
 						</div>
 						
-						<div class="col-md-10 lab-list-col-10" id="parentDiv">
+						<div class="col-md-10 lab-list-col-10">
 							<img src="images/engineering/icon_2.png" /> 
 							<span class="text-normal-gray-big">Computer Science & Engineering</span>
 							<br>
@@ -149,7 +147,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue"><a href="http://vlab.co.in/labs/cse12/" class="sidebar-a">FPGA & Embedded systems lab (Under Maintenance)</a></p>
+									<p class="text-h3-darkblue"><a href="http://vlab.co.in/labs/cse12/" class="sidebar-a">FPGA & Embedded systems lab</a></p>
 									<p class="text-normal-gray-smallest"> This lab is a great tool if you are new to developing embedded systems on FPGAs and explains not only the "how" but also the "why".</p>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -165,7 +163,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue"><a href="http://cse.iitkgp.ac.in/~rkumar/pds-vlab/" class="sidebar-a">FPGA & Embedded systems lab</a></p>
+									<p class="text-h3-darkblue"><a href="http://cse.iitkgp.ac.in/~rkumar/pds-vlab/" class="sidebar-a"><a href="http://vlab.co.in/labs/cse12/" class="sidebar-a">FPGA & Embedded systems lab</a></p>
 									<p class="text-normal-gray-smallest"> The basic thrust of this Lab will be to learn programming languages and implementing data structures.</p>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -197,7 +195,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue"><a href="http://virtual-labs.ac.in/cse28/" class="sidebar-a">Advanced Network Technologies (Under Maintenance)</a></p>
+									<p class="text-h3-darkblue"><a href="http://virtual-labs.ac.in/cse28/" class="sidebar-a">Advanced Network Technologies</a></p>
 									<p class="text-normal-gray-smallest"> In this lab we are going to analyze different network architecture, technology and their behaviour with respect to their protocol suites.</p>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -213,7 +211,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue"><a href="http://virtual-labs.ac.in/cse08/" class="sidebar-a">Software Engineering Lab (Under Maintenance)</a></p>
+									<p class="text-h3-darkblue"><a href="http://virtual-labs.ac.in/cse08/" class="sidebar-a">Software Engineering Lab</a></p>
 									<p class="text-normal-gray-smallest"> This lab attempts to provide basic concepts to the students on a wide range of topics including Requirements analysis, ER modeling, identification of domain classes, use-case diagrams, designing a test suite.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -566,7 +564,7 @@
 
 
 
-							<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Coming Soon</h2>
+							<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Comming Soon</h2>
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
