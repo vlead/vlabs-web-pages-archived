@@ -288,7 +288,7 @@ a.active {
 	
 	.banner-text-big
 	{
-		font-size: 2.0em !important;
+		font-size: 30px !important;
 	}
 	
 }
@@ -460,15 +460,15 @@ a:focus
 .text-h2-lightblue
 {
 	color: #2C99CE;
-	font-size: 1.8em;
+	font-size: 20px;
 	margin-left: 0.8em;
-	font-size: 1.2em;
+
 }
 
 .text-a-lightgreen
 {
 	color: #72AB44;
-	font-size: 1.3em;
+	font-size: 15px;
 	text-decoration: underline;
 }
 
@@ -488,13 +488,13 @@ a:focus
 .text-h2-lightblue-small
 {
 	color: #2C99CE;
-	font-size: 1.5em;
+	font-size: 16px;
 }
 
 .text-h3-darkblue-bold
 {
 	color: #3e6389;
-	font-size: 1em;
+	font-size: 15px;
 	font-weight: normal;
 }
 
@@ -507,7 +507,7 @@ a:focus
 .text-normal-gray-small
 {
 	color: #888;
-	font-size: 12px;
+	font-size: 15px;
 }
 
 .text-normal-gray-big
@@ -519,7 +519,7 @@ a:focus
 .text-normal-gray-smallest
 {
 	color: #888;
-	font-size: 13px;
+	font-size: 11px;
 }
 
 .featured-labs-icon-text
@@ -685,7 +685,7 @@ a:focus
 
 .banner-text-small
 {
-	font-size: 1.7em;
+	font-size: 18px;
 }
 
 .banner-text-medium
@@ -695,7 +695,7 @@ a:focus
 
 .banner-text-big
 {
-	font-size: 2.7em;
+	font-size: 30px;
 }
 
 .baneer-text-sub-div
@@ -728,18 +728,14 @@ a:focus
 {
   position: absolute;
   top: 140px;
-  left: 3.7%;	
+  left: 40%;	
   width: 150%;
 }
 
 .banner-caption-text
 {
-<<<<<<< HEAD
-	font-size: 2.0em;	
+	font-size: 20.4px;	
 	text-align: left;
-=======
-	font-size: 1.2em;	
->>>>>>> f3b4f22ca1ec6639cf95185650d5427a8bca30ee
 	line-height: normal;
 	color: black;
 	
@@ -752,7 +748,7 @@ a:focus
 
 	.banner-text-small
 	 {
-		font-size: 0.8em !important;
+		font-size: 18px !important;
   	 }
 
 	.banner-text-medium
@@ -760,7 +756,9 @@ a:focus
 		font-size: 0.9em !important;
 	}
 	
-	.banner-text-big
+	.banner-text-big		
+
+
 	{
 		font-size: 1.1em !important; 
 	}
@@ -796,7 +794,7 @@ a:focus
 @media only screen and (min-width: 400px) and (max-width: 500px) {
 	.banner-text-small
 	 {
-		font-size: 0.9em !important;
+		font-size: 18px !important;
   	 }
 
 	.banner-text-medium
@@ -834,7 +832,7 @@ a:focus
 @media only screen and (min-width: 501px) and (max-width: 767px) {
 	.banner-text-small
 	 {
-		font-size: 0.9em !important;
+		font-size: 18px !important;
   	 }
 
 	.banner-text-medium
@@ -1001,7 +999,7 @@ a:focus
 	
 	.banner-text-big
 	{
-		font-size: 2.0em !important;
+		font-size: 30px !important;
 	}
 	
 	.banner-text
