@@ -130,8 +130,8 @@ a.active {
 {
 	/* float: right; */
 	border-radius: 10px;
- 	margin-left: 10px;
-	margin-right: 10px; 
+ 	margin-left: 20px;
+	margin-right: 20px; 
 }
 
 .menu-li:HOVER
@@ -456,14 +456,13 @@ a:focus
  	-webkit-line-clamp: 3;
  	-webkit-box-orient: vertical;*/
 }
-
-
 /*========================font classes=======================*/
 .text-h2-lightblue
 {
 	color: #2C99CE;
-	font-size: 20px;
+	font-size: 1.8em;
 	margin-left: 0.8em;
+	font-size: 1.2em;
 }
 
 .text-a-lightgreen
@@ -494,8 +493,8 @@ a:focus
 
 .text-h3-darkblue-bold
 {
-	color: #003366;
-	font-size: 15px;
+	color: #3e6389;
+	font-size: 1em;
 	font-weight: normal;
 }
 
@@ -507,8 +506,8 @@ a:focus
 
 .text-normal-gray-small
 {
-	color: #999999;
-	font-size: 13px;
+	color: #888;
+	font-size: 12px;
 }
 
 .text-normal-gray-big
@@ -519,8 +518,8 @@ a:focus
 
 .text-normal-gray-smallest
 {
-	color: #999999;
-	font-size: 11px;
+	color: #888;
+	font-size: 13px;
 }
 
 .featured-labs-icon-text
@@ -686,7 +685,7 @@ a:focus
 
 .banner-text-small
 {
-	font-size: 18px;
+	font-size: 1.7em;
 }
 
 .banner-text-medium
@@ -729,14 +728,18 @@ a:focus
 {
   position: absolute;
   top: 140px;
-  left: 40%;	
+  left: 3.7%;	
   width: 150%;
 }
 
 .banner-caption-text
 {
-	font-size: 20.4px;	
-	text-align: left;	
+<<<<<<< HEAD
+	font-size: 2.0em;	
+	text-align: left;
+=======
+	font-size: 1.2em;	
+>>>>>>> f3b4f22ca1ec6639cf95185650d5427a8bca30ee
 	line-height: normal;
 	color: black;
 	
