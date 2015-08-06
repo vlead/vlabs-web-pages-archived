@@ -629,7 +629,8 @@ a:focus
 /*Labs page*/
 .sidebar-col-2
 {
-	
+	max-height: 550px;
+	overflow: auto;
 }
 
 .lab-list-col-10
