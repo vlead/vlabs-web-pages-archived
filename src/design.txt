@@ -13,6 +13,7 @@ Same tab for the following:
  - All Labs
  - Partners
  - Contact
+ - Side panel (Institute Names)
 
 
 Rest open in new tabs!
