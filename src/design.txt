@@ -1,0 +1,37 @@
+#+title:  Design of the pages
+
+* Design Decisions
+
+* Units
+
+Should only use em or ex!
+* New Tabs or not?
+
+Same tab for the following:
+
+ - About
+ - All Labs
+ - Partners
+ - Contact
+
+
+Rest open in new tabs!
+
+* Fonts
+
+All fonts are Callibri
+
+
+* Logos
+
+
+
+* Featured  Labs
+
+All lab names should be maximum of 2 lines.  All
+descriptions of the featured labs should be a maximum of 4
+lines.
+
+* Labs not working
+Disable lab and  lecture links
+
