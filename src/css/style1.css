@@ -15,15 +15,15 @@ try to alter with above URL and check which fit the best
 */
 body {
     overflow-x: hidden;
-   font-family: 'Open Sans', sans-serif;
+   font-family: Calibri !important;
 }
 
 p {
-    font-size: 20px;
+    font-size: 1.429em;
 }
 
 p.small {
-    font-size: 16px;
+    font-size: 1.143em;
 }
 
 a,
@@ -80,8 +80,8 @@ a.active {
   border: 0 none;
   color: #666666;
   float: left;
-  font-family: Calibri;
-  font-size: 15px;
+  font-family: Calibri !important;
+  font-size: 1.071em;
   height: 36px;
   margin: 0;
   padding-left: 15px;
@@ -111,7 +111,7 @@ a.active {
 
 .menu-a
 {
-	font-size: 18px !important;
+	font-size: 1em !important;
 	font-family: Calibri !important;
   color: #2C99CD !important;
   padding-left: 10px !important;
@@ -130,8 +130,8 @@ a.active {
 {
 	/* float: right; */
 	border-radius: 10px;
- 	margin-left: 20px;
-	margin-right: 20px; 
+ 	margin-left: 10px;
+	margin-right: 10px; 
 }
 
 .menu-li:HOVER
@@ -288,7 +288,7 @@ a.active {
 	
 	.banner-text-big
 	{
-		font-size: 30px !important;
+		font-size: 2.0em !important;
 	}
 	
 }
@@ -378,13 +378,13 @@ a.active {
   min-height: 1px;
   vertical-align: bottom;
   /* display: flex; */
-  min-height: 228px;
+  min-height: 205px;
 }
 
 .col-md-2-5-1-l
 {
 	width: 100%;
-	  min-height: 228px;
+	  min-height: 205px;
 	  height: 100%;
 }
 
@@ -393,7 +393,7 @@ a.active {
 	background: url("../images/dotted-devider-h-o.png") no-repeat;
 	background-position: left bottom;
 	width: 100%;
-	  min-height: 228px;
+	  min-height: 205px;
 	  height: 100%;
 }
 
@@ -449,26 +449,27 @@ a:focus
 
 .featured-labs
 {
-	min-height: 208px !important;
+	min-height: 114px !important;
 	/*overflow: hidden;
  	text-overflow: ellipsis;
  	display: -webkit-box;
  	-webkit-line-clamp: 3;
  	-webkit-box-orient: vertical;*/
 }
+
+
 /*========================font classes=======================*/
 .text-h2-lightblue
 {
 	color: #2C99CE;
-	font-size: 20px;
+	font-size: 1.429em;
 	margin-left: 0.8em;
-
 }
 
 .text-a-lightgreen
 {
 	color: #72AB44;
-	font-size: 15px;
+	font-size: 1.3em;
 	text-decoration: underline;
 }
 
@@ -488,13 +489,13 @@ a:focus
 .text-h2-lightblue-small
 {
 	color: #2C99CE;
-	font-size: 16px;
+	font-size: 1.5em;
 }
 
 .text-h3-darkblue-bold
 {
-	color: #3e6389;
-	font-size: 15px;
+	color: #003366;
+	font-size: 1.071em;
 	font-weight: normal;
 }
 
@@ -506,26 +507,26 @@ a:focus
 
 .text-normal-gray-small
 {
-	color: #888;
-	font-size: 15px;
+	color: #999999;
+	font-size: 0.929em;
 }
 
 .text-normal-gray-big
 {
 	color: #888;
-	font-size: 30px;
+	font-size: 2.143em;
 }
 
 .text-normal-gray-smallest
 {
-	color: #888;
-	font-size: 11px;
+	color: #999999;
+	font-size: 0.786em;
 }
 
 .featured-labs-icon-text
 {
 	color: #888;
-	font-size: 13px;
+	font-size: 0.929em;
 }
 
 .featured-labs-main-div
@@ -685,7 +686,7 @@ a:focus
 
 .banner-text-small
 {
-	font-size: 18px;
+	font-size: 1.286em;
 }
 
 .banner-text-medium
@@ -695,7 +696,7 @@ a:focus
 
 .banner-text-big
 {
-	font-size: 30px;
+	font-size: 2.7em;
 }
 
 .baneer-text-sub-div
@@ -734,8 +735,8 @@ a:focus
 
 .banner-caption-text
 {
-	font-size: 20.4px;	
-	text-align: left;
+	font-size: 1.457em;	
+	text-align: left;	
 	line-height: normal;
 	color: black;
 	
@@ -748,7 +749,7 @@ a:focus
 
 	.banner-text-small
 	 {
-		font-size: 18px !important;
+		font-size: 0.8em !important;
   	 }
 
 	.banner-text-medium
@@ -756,9 +757,7 @@ a:focus
 		font-size: 0.9em !important;
 	}
 	
-	.banner-text-big		
-
-
+	.banner-text-big
 	{
 		font-size: 1.1em !important; 
 	}
@@ -794,7 +793,7 @@ a:focus
 @media only screen and (min-width: 400px) and (max-width: 500px) {
 	.banner-text-small
 	 {
-		font-size: 18px !important;
+		font-size: 0.9em !important;
   	 }
 
 	.banner-text-medium
@@ -832,7 +831,7 @@ a:focus
 @media only screen and (min-width: 501px) and (max-width: 767px) {
 	.banner-text-small
 	 {
-		font-size: 18px !important;
+		font-size: 0.9em !important;
   	 }
 
 	.banner-text-medium
@@ -999,7 +998,7 @@ a:focus
 	
 	.banner-text-big
 	{
-		font-size: 30px !important;
+		font-size: 2.0em !important;
 	}
 	
 	.banner-text
