@@ -196,7 +196,63 @@ a.active {
 	
 }
 
+/*@media only screen and (min-device-width: 480px){
+	.responsive {
+		width: 100%;
+	}
+}
 
+@media only screen and (min-device-width: 768px){
+	.responsive {
+		width: 100%;
+	}	
+}
+
+@media screen only and (min-device-width: 769px) and (max-device-width: 1199px) { 
+	.responsive {
+		width: 50%;
+	}
+}
+
+@media screen only and (min-device-width: 1200px) and (max-device-width: 1600px) { 
+	.responsive {
+		width: 50%;
+	}
+}*/
+
+@media (min-width:320px) { 
+/* smartphones, iPhone, portrait 480x320 phones */ 
+	.responsive {
+		width: 100%;
+	}
+}
+@media (min-width:481px) { 
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+	.responsive {
+		width: 100%;
+	}
+}
+@media (min-width:641px) { 
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+	.responsive {
+		width: 100%;
+	}
+}
+@media (min-width:961px) { .responsive {
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+		width: 83%;
+	}
+}
+@media (min-width:1025px) { .responsive {
+/* big landscape tablets, laptops, and desktops */ 
+		width: 50%;
+	}
+}
+@media (min-width:1281px) { .responsive {
+/* hi-res laptops and desktops */ 
+		width: 50%;
+	}
+}
 
 @media only screen and (min-width: 401px) and (max-width: 523px) { 
    
@@ -624,7 +680,6 @@ a:focus
 	border: 0px;
 }
 /*******************/
-
 
 /*Labs page*/
 .sidebar-col-2
