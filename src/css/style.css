@@ -1125,4 +1125,7 @@ a:focus
 		font-size: 1.8em;	
 	}
 }
-
+#experiment-article-section-1-heading {
+color: #888;
+font-size: 30px;
+}
