@@ -23,7 +23,7 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-	<script type="text/javascript" src = 'tabs.js'></script>
+	
 </head>
 <body id="page-top" class="index">
 <div id="top">
@@ -47,8 +47,8 @@
 			               
 			                <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
 			                	<li>
-			                		<form method="get" action="search-result.html">
-			                        	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB" name="q" id="q"/>
+			                		<form method="post">
+			                        	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB"/>
 			                        	<input type="submit" value="" class="search-button" />
 			                        </form>
 			                	</li>
@@ -56,17 +56,20 @@
 			                
 			                <ul class="nav navbar-nav navbar-right menu-ul">
 			                    <li class="page-scroll menu-li " >
-			                        <a href="index.html" class="menu-a" >HOME</a>
+			                        <a href="index.html#aboutus" class="menu-a" >HOME</a>
 			                    </li>
 			                    <li class="page-scroll menu-li menu-li-active">
 			                        <a href="labs.html"  class="menu-a menu-a-active" >ALL LABS</a>
 			                    </li>
-			                    <li class="page-scroll menu-li " >
-			                        <a href="index.html#partner" class="menu-a" >PARTNERS</a>
-			                    </li><li class="page-scroll menu-li " >
-			                        <a href="index.html#contact" class="menu-a" >CONTACT</a>
+<!-- 			                    <li class="page-scroll menu-li">
+			                        <a href="#signin"  class="menu-a" >SIGN IN</a>
+			                    </li> -->
+			                     <li class="page-scroll menu-li search-form-li">
+			                        
 			                    </li>
+			                    
 			                </ul>
+			                
 			               
 			                	
 			            </div>
@@ -86,16 +89,16 @@
 			
 			<!-- =================================================================================================================================== -->
 			<div class="container-fluid"  style="margin-left: 35px; margin-right: 35px;">
-				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 10px; ">Disciplines and Domains</h2>
+				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Disciplines and Domains</h2>
 					
 					<div class="row">
 						<div class="col-md-2 sidebar-col-2">
-							<a href=" electronics-and-communications-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Electronics & Communications</h3></a>
+							<a href=" electronics-and-communications-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px; color: #ff6600;"> Electronics & Communications</h3></a>
 							<a href="computer-science-and-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Computer Science & Engineering</h3></a>
 							<a href="electrical-engineering-labs.html " class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Electrical Engineering</h3></a>
 							<a href=" mechanical-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Mechanical Engineering</h3></a>
 							<a href="chemical-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Chemical Engineering</h3></a>
-							<a href="biotechnology-and-biochemical-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Biotechnology & Biomedical Engineering</h3></a>
+							<a href="biotechnology-and-biochemical-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Biotechnology & Biochemical Engineering</h3></a>
 							<a href="civil-engineering-labs.html " class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Civil Engineering</h3></a>
 							<a href=" physical-sciences-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Physical Sciences</h3></a>
 							<a href="chemical-sciences-labs.html " class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Chemical Sciences</h3></a>
@@ -115,7 +118,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue"><a href="http://iitk.vlab.co.in/index.php?sub=27&brch=236" class="sidebar-a">Virtual Laboratory on Oscillations</p></a>
+									<p class="text-h3-darkblue">Virtual Laboratory on Oscillations</p>
 									<p class="text-normal-gray-smallest">Virtual Laboratory on Oscillations illustrates the oscillations and related phenomena such as Simple Harmonic Motion, LC Circuit, LCR Circuit, Coupled Harmonic Oscillator etc., .</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -131,7 +134,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue"><a href="http://phy14-iiith.vlabs.ac.in/" class="sidebar-a">Physical Sciences Laboratory</p></a>
+									<p class="text-h3-darkblue">Physical Sciences Laboratory</p>
 									<p class="text-normal-gray-smallest"> It describes the conceptual models with predictive abilities are developed to investigate mechanisms underlying the observed phenomena</p>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -147,7 +150,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue"><a href="http://vlab.amrita.edu/?sub=1&brch=281" class="sidebar-a">Virtual Optics Lab</a></p>
+									<p class="text-h3-darkblue">Virtual Optics Lab</p>
 									<p class="text-normal-gray-smallest"> Optics usually describes the behavior of visible, ultraviolet, and infrared light. Because light is an electromagnetic wave, other forms of electromagnetic radiation such as X-rays, microwaves, and radio waves exhibit similar properties.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -163,7 +166,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue"><a href="http://vlab.amrita.edu/?sub=1&brch=282" class="sidebar-a">Solid State Physics Virtual Lab</a></p>
+									<p class="text-h3-darkblue">Solid State Physics Virtual Lab</p>
 									<p class="text-normal-gray-smallest"> It describes ths  crystal and electronic structure, lattice dynamics, and optical properties of different materials.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -179,7 +182,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue"><a href="http://vlab.amrita.edu/?sub=1&brch=74" class="sidebar-a">Virtual Advanced Mechanics Lab</a></p>
+									<p class="text-h3-darkblue">Virtual Advanced Mechanics Lab</p>
 									<p class="text-normal-gray-smallest"> This lab consists of Torque and angular acceleration of a fly wheel, Ballistic Pendulum, Projectile Motion etc., .</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -195,7 +198,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue"><a href="http://vlab.amrita.edu/?sub=1&brch=189" class="sidebar-a">Laser Optics Virtual Lab</a></p>
+									<p class="text-h3-darkblue">Laser Optics Virtual Lab</p>
 									<p class="text-normal-gray-smallest"> This lab explains the study of optical properties for different material by adopting laser devices and handling basic aspects of interferometry.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -211,8 +214,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue"><a href="http://vlab.amrita.edu/?sub=1&brch=192" class="sidebar-a">Virtual Electricity & Magnetism Lab</a>
-									</p>
+									<p class="text-h3-darkblue">Virtual Electricity & Magnetism Lab</p>
 									<p class="text-normal-gray-smallest"> This lab studies about the Tangent Galvanometer, Deflection Magnetometer, Barkhausen Effect, Temperature Coefficient of Resistance.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -228,7 +230,7 @@
 							
 								<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue"><a href="http://vlab.amrita.edu/?sub=1&brch=194" class="sidebar-a">Virtual Heat & Thermodynamics Lab</a></p>
+									<p class="text-h3-darkblue">Virtual Heat & Thermodynamics Lab</p>
 									<p class="text-normal-gray-smallest"> This lab is to study the Thermal radiation, Heat conduction and the the Study of Phase Change.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -244,7 +246,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue"><a href="http://vlab.amrita.edu/?sub=1&brch=195" class="sidebar-a">Virtual Modern Physics Lab</a></p>
+									<p class="text-h3-darkblue">Virtual Modern Physics Lab</p>
 									<p class="text-normal-gray-smallest"> This lab is to study the tiny (subatomic) particles or lightening fast speeds.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -260,8 +262,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">
-							<a href="http://vlab.amrita.edu/?sub=1&brch=201" class="sidebar-a">Virtual Harmonic Motion and Waves Lab</a></p>
+									<p class="text-h3-darkblue">Virtual Harmonic Motion and Waves Lab</p>
 									<p class="text-normal-gray-smallest"> This lab is to study the generation, propagation and reception of mechanical waves and vibrations.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -275,7 +276,7 @@
 								</div>
 							</div>
 
-							<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Coming Soon</h2>
+							<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Comming Soon</h2>
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
@@ -357,27 +358,24 @@
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > REGISTRATION</a></div>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > LOGIN</a></div> -->
 				<!-- <div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Outreach Portal</a></div> -->
-				<div><a href="http://vlead.virtual-labs.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > VLEAD Blog</a></div>
-				<div><a href="http://www.sakshat.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Sakshat Portal</a></div>
-				<div><a href="http://118.102.191.38/feedback/Registration.html" class="text-a-lightgreen" style="text-decoration: underline;" > Nodal Center</a></div>
-
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > VLEAD Blog</a></div>
+				<div><a href="http://www.sakshat.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > SAKSHAT PORTAL</a></div>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Nodal Center</a></div>
 			</div>
 			
 			<div class="col-md-3 border-right-green-dotted" >
 <!-- 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FAQ</a></div>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > SAKSHAT PORTAL</a></div> -->
-
-				<div class="text-h2-lightblue-small"> Contact : <i class="fa fa-envelope-o" style="color: white; font-size: 0.8em;"></i> <a class="text-a-lightgreen" style="text-decoration: underline; font-size: 1.0em;" href="mailto:support@vlab.co.in">support@vlabs.ac.in</a></div>
-
-				<div><a href="http://118.102.191.38/feedback/feedback.html" class="text-a-lightgreen" style="text-decoration: underline;" > Feedback</a></div>
+				<div class="text-h2-lightblue-small"> Contact : <i class="fa fa-envelope-o" style="color: white; font-size: 0.8em;"></i> <a class="text-a-lightgreen" style="text-decoration: underline; font-size: 1.0em;" href="mailto:support@vlab.co.in">support@vlab.co.in</a></div>
+				<div><a href="http://118.102.191.38/feedback/feedback.html" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
 			</div>
 			
 			<div class="col-md-2 border-right-green-dotted" >
 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;"> Follow us</h2>
-
 				<a href="https://www.facebook.com/pages/Virtual-Labs-IIT-Delhi/301510159983871" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/fb.png"  style="border-radius: 50%;"/> </a>
-				<a href="https://twitter.com/TheVirtualLabs" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/twitter.png"  style="border-radius: 50%;"/></a>
+				<a href="https://twitter.com/" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/twitter.png"  style="border-radius: 50%;"/></a>
+				<a href="http://linkedin.com" class="text-a-lightgreen nounderline"  target="_blank" > <img src="images/social/linkedin.png" style="border-radius: 50%;" /></a>
 			</div>
 			
  		</div>
