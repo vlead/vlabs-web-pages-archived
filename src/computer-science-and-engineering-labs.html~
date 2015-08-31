@@ -1,24 +1,4 @@
- Skip to content
-This repository
 
-    Pull requests
-    Issues
-    Gist
-
-    @Sonali-Goyal
-
-    10
-    0
-    0
-
-vlead/ui-3.0-toolkit
-
-ui-3.0-toolkit/src/computer-science-and-engineering-labs.html
-Charvi Sardana 4 days ago
-New UI
-
-0 contributors
-715 lines (613 sloc) 43.905 kB
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -633,18 +613,6 @@ singleItem:true
 </script>
 </html>
 
-    Status
-    API
-    Training
-    Shop
-    Blog
-    About
-    Help
-
-    © 2015 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Contact
+  
 
 
