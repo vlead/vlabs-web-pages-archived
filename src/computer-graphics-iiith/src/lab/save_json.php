@@ -1,7 +1,5 @@
 <?php
-        // Append new form data in json string saved in text file
-
-        // path and name of the file
+        
     $filetxt = 'data.txt';
 
         // check if all form data are submited, else output error message
@@ -29,7 +27,7 @@
         );
 
         // path and name of the file
-        $filetxt = 'dirdata/data.txt';
+        $filetxt = 'data.txt';
 
         $arr_data = array();        // to store all form data
 
@@ -50,8 +48,8 @@
 
         // saves the json string in "data.txt" (in "dirdata" folder)
         // outputs error message if data cannot be saved
-        if(file_put_contents('dirdata/data.txt', $jsondata)) echo 'Data successfully saved';
-        else echo 'Tidak dapat menyimpan data di "dirdata/data.txt"';
+        if(file_put_contents('data.txt', $jsondata)) echo 'Data successfully saved';
+        else echo 'Tidak dapat menyimpan data di "data.txt"';
       }
     }
         else echo 'Form fields not submited';
