@@ -258,7 +258,7 @@ p.small {
 
 .container-fluid form ul
 {
-	font-size:100%;
+	font-size:200%;
 	list-style-type:none;
 	margin:0;
 	padding:0;

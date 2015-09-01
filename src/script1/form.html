@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title> Myform </title>
+	<script type="text/javascript">	
+		function f()
+		{
+			var url = window.location.href
+			url = url.substr(url.indexOf('?') + 1)
+			list = url.split('?')
+			for(var i = 0 ; i < list.length ; i++)
+			{
+				list1 = list[i].split('=')
+				document.getElementById(list1[0]).value = list1[1];
+			}
+		}
+	</script>
+</head>
+<body>
+	<form action="form1.html" method="get">
+		First Name : <input type="text" name="Name" id = "Name">
+		Last Name : <input type="text" name="Surname" id = "Surname">
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
