@@ -8,8 +8,6 @@ f.close()
 soup = BeautifulSoup(srchtml, 'html.parser')
 att = ''+"list-of-experiments"
 tagger = soup.findAll('ul', attrs={'id':att})
-for tag in str(tagger[0].text):
-	print tag
-	print "2" 
+tag=tagger[0].text
 
-
+print tag

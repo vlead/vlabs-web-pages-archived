@@ -121,7 +121,7 @@ function prefill()
 		<div class="container-fluid"  style="margin-left: 35px; margin-right: 35px;">
 				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Feedback Form</h2>
 					
-		<form id="form_1044519" class="appnitro" style="font-family:Lucida Grande, Tahoma, Arial, Verdana, sans-serif; font-size:small;" action="save_json.php" method="post">
+		<form id="form_1044519" class="appnitro" style="font-family:Lucida Grande, Tahoma, Arial, Verdana, sans-serif; font-size:small;" action="lab.html" method="post">
 							
 			<ul >
 			
