@@ -23,7 +23,7 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-	
+	<script type="text/javascript" src = 'tabs.js'></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67020197-1', 'auto');ga('send', 'pageview');</script>	
 </head>
 <body id="page-top" class="index">
 <div id="top">
@@ -47,8 +47,8 @@
 			               
 			                <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
 			                	<li>
-			                		<form method="post">
-			                        	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB"/>
+			                		<form method="get" action="search-result.html">
+			                        	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB" name="q" id="q"/>
 			                        	<input type="submit" value="" class="search-button" />
 			                        </form>
 			                	</li>
@@ -56,18 +56,16 @@
 			                
 			                <ul class="nav navbar-nav navbar-right menu-ul">
 			                    <li class="page-scroll menu-li " >
-			                        <a href="index.html#aboutus" class="menu-a" >HOME</a>
+			                        <a href="index.html" class="menu-a" >HOME</a>
 			                    </li>
 			                    <li class="page-scroll menu-li menu-li-active">
 			                        <a href="labs.html"  class="menu-a menu-a-active" >ALL LABS</a>
 			                    </li>
-<!-- 			                    <li class="page-scroll menu-li">
-			                        <a href="#signin"  class="menu-a" >SIGN IN</a>
-			                    </li> -->
-			                     <li class="page-scroll menu-li search-form-li">
-			                        
+			                    <li class="page-scroll menu-li " >
+			                        <a href="index.html#partner" class="menu-a" >PARTNERS</a>
+			                    </li><li class="page-scroll menu-li " >
+			                        <a href="index.html#contact" class="menu-a" >CONTACT</a>
 			                    </li>
-			                    
 			                </ul>
 			                
 			               
@@ -89,11 +87,11 @@
 			
 			<!-- =================================================================================================================================== -->
 			<div class="container-fluid"  style="margin-left: 35px; margin-right: 35px;">
-				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Disciplines and Domains</h2>
+				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 10px; ">Disciplines and Domains</h2>
 					
 					<div class="row">
 						<div class="col-md-2 sidebar-col-2">
-							<a href="electronics-and-communications-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px; color: #ff6600;"> Electronics & Communications</h3></a>
+							<a href="electronics-and-communications-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Electronics & Communications</h3></a>
 							<a href="computer-science-and-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Computer Science & Engineering</h3></a>
 							<a href="electrical-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Electrical Engineering</h3></a>
 							<a href="mechanical-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Mechanical Engineering</h3></a>
@@ -118,7 +116,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Material Response to Microstructural, Mechanical, Thermal and Biological Stimuli</p>
+									<p class="text-h3-darkblue"><a href="http://mrmsmtbs-iitk.vlabs.ac.in/home%20page.html" class="sidebar-a">Material Response to Microstructural, Mechanical, Thermal and Biological Stimuli</a></p>
 									<p class="text-normal-gray-smallest"> Virtual lab is created for understanding the material response (microstructure)when any thermal or mechanical stimuli is provided to it. In addition ionic conductivity dependence on the composition of material is explained here with.</p>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -134,7 +132,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Metal Forming Lab</p>
+									<p class="text-h3-darkblue"><a href="http://msvs-dei.vlabs.ac.in/" class="sidebar-a">Metal Forming Lab</a></p>
 									<p class="text-normal-gray-smallest"> This lab is to understand the various fundamental metal forming processes and to recognise the effect of various process parameters with the help of computer numerical simulations. </p>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -150,7 +148,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Mechanics of machine Lab</p>
+									<p class="text-h3-darkblue"><a href="http://mm-nitk.vlabs.ac.in/" class="sidebar-a">Mechanics of machine Lab</a></p>
 									<p class="text-normal-gray-smallest"> This lab describes about the various position analysis and velocity analysis of Grashof four bar mechanism, Slider crank mechanism, Scotch Yoke Mechanism, Elliptical Trammel.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -166,7 +164,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Machine Dynamics & Vibration Lab</p>
+									<p class="text-h3-darkblue"><a href="http://mdmv-nitk.vlabs.ac.in/" class="sidebar-a">Machine Dynamics & Vibration Lab</a></p>
 									<p class="text-normal-gray-smallest"> This lab decribes the free vibration of cantilever beam: simply supported beam fixed beam: and Forced vibration of SDOF system, 2DOF Forced vibration, Dynamic Vibration Absorber.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -182,7 +180,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Vibration and Acoustics Lab</p>
+									<p class="text-h3-darkblue"><a href="http://va-coep.vlabs.ac.in/" class="sidebar-a">Vibration and Acoustics Lab</a></p>
 									<p class="text-normal-gray-smallest"> In this lab, we will do virtual experiments to understand Newton's laws of motion. We will start with a simple pendulum, and from then on, the experiments get more interesting.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -198,7 +196,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Micromachining laboratory</p>
+									<p class="text-h3-darkblue"><a href="http://mm-coep.vlabs.ac.in/" class="sidebar-s">Micromachining laboratory</a></p>
 									<p class="text-normal-gray-smallest"> This labs helps us to study pulsed-heating of materials, erosion mechanism from Lazarenko's model, various thermal models for EDM and to study the effect of process parameters in electrochemical grinding.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -214,7 +212,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">FAB laboratory</p>
+									<p class="text-h3-darkblue"><a href="http://fab-coep.vlabs.ac.in/" class="sidebar-a">FAB laboratory</a></p>
 									<p class="text-normal-gray-smallest"> Fab Laboratory is to understand about 3D machining, 3D scanning,  Computer Controlled Cutting of wooden object, PCB design & fabrication etc., .</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -230,7 +228,7 @@
 							
 								<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">General Purpose Production Shop Simulation Lab</p>
+									<p class="text-h3-darkblue"><a href="http://gssl.iitk.ac.in/pssl/" class="sidebar-a">General Purpose Production Shop Simulation Lab (Under Maintenance)</a></p>
 									<p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -246,7 +244,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Laser Based Flow Diagnostics Laboratory</p>
+									<p class="text-h3-darkblue"><a href="#" class="sidebar-a">Laser Based Flow Diagnostics Laboratory</a></p>
 									<p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -262,7 +260,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Nanocomposite, Fabrication and Biomaterials & Signal Processing Laboratory</p>
+									<p class="text-h3-darkblue"><a href="http://www.iitk.ac.in/biomaterialslab/virtuallab.html" class="sidebar-a">Nanocomposite, Fabrication and Biomaterials & Signal Processing Laboratory</a></p>
 									<p class="text-normal-gray-smallest"> This lab describes the real life Spark Plasma Sintering , Bacteria Culture, Cell Culture.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -278,7 +276,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Virtual Combusion and Automisation Laboratory</p>
+									<p class="text-h3-darkblue"><a href="http://vcal-iitk.vlabs.ac.in/" class="sidebar-a">Virtual Combusion and Automisation Laboratory</a></p>
 									<p class="text-normal-gray-smallest"> This lab defines the various types of fuels like liquid, solid and gaseous fuels are available for firing in boilers, furnaces and other combustion equipments</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -295,7 +293,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Mine Automation and Virtual Reality</p>
+									<p class="text-h3-darkblue"><a href="http://iitkgp.vlab.co.in/?sub=40&brch=137" class="sidebar-a">Mine Automation and Virtual Reality</a></p>
 									<p class="text-normal-gray-smallest">This lab is about the Determination of Shock Pressure Loss in Presence of Tub and Estimation of  Drag coefficient, and the  Determination  of Frictional Co-efficient of Mine Airways</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -311,7 +309,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Virtual Labs on Mechanical Vibrations</p>
+									<p class="text-h3-darkblue"><a href="http://iitg.vlab.co.in/?sub=62" class="sidebar-a">Virtual Labs on Mechanical Vibrations</a></p>
 									<p class="text-normal-gray-smallest"> This lab describes the Free Vibration of Spring-Mass System || Free Vibration of a Cantilever Beam with a Lumped Mass at Free End || Forced Vibration Of a Cantilever Beam with a Lumped Mass at Free End</p>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -326,7 +324,7 @@
 							</div>
 							
 								
-							<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Comming Soon</h2>
+							<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Coming Soon</h2>
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
@@ -505,25 +503,30 @@ IIT GUWAHATI</p>
 <!-- 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;">Nodal Centers</h2>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > REGISTRATION</a></div>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > LOGIN</a></div> -->
+
 				<!-- <div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Outreach Portal</a></div> -->
-				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > VLEAD Blog</a></div>
-				<div><a href="http://www.sakshat.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > SAKSHAT PORTAL</a></div>
-				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Nodal Center</a></div>
+				<div><a href="http://vlead.virtual-labs.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > VLEAD Blog</a></div>
+				<div><a href="http://www.sakshat.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Sakshat Portal</a></div>
+				<div><a href="http://118.102.191.38/feedback/Registration.html" class="text-a-lightgreen" style="text-decoration: underline;" > Nodal Center</a></div>
+
 			</div>
 			
 			<div class="col-md-3 border-right-green-dotted" >
 <!-- 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FAQ</a></div>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > SAKSHAT PORTAL</a></div> -->
-				<div class="text-h2-lightblue-small"> Contact : <i class="fa fa-envelope-o" style="color: white; font-size: 0.8em;"></i> <a class="text-a-lightgreen" style="text-decoration: underline; font-size: 1.0em;" href="mailto:support@vlab.co.in">support@vlab.co.in</a></div>
-				<div><a href="http://118.102.191.38/feedback/feedback.html" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
+
+				<div class="text-h2-lightblue-small"> Contact : <i class="fa fa-envelope-o" style="color: white; font-size: 0.8em;"></i> <a class="text-a-lightgreen" style="text-decoration: underline; font-size: 1.0em;" href="mailto:support@vlab.co.in">support@vlabs.ac.in</a></div>
+
+				<div><a href="http://118.102.191.38/feedback/feedback.html" class="text-a-lightgreen" style="text-decoration: underline;" > Feedback</a></div>
+
 			</div>
 			
 			<div class="col-md-2 border-right-green-dotted" >
 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;"> Follow us</h2>
+
 				<a href="https://www.facebook.com/pages/Virtual-Labs-IIT-Delhi/301510159983871" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/fb.png"  style="border-radius: 50%;"/> </a>
-				<a href="https://twitter.com/" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/twitter.png"  style="border-radius: 50%;"/></a>
-				<a href="http://linkedin.com" class="text-a-lightgreen nounderline"  target="_blank" > <img src="images/social/linkedin.png" style="border-radius: 50%;" /></a>
+				<a href="https://twitter.com/TheVirtualLabs" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/twitter.png"  style="border-radius: 50%;"/></a>
 			</div>
 			
  		</div>

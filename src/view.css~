@@ -205,7 +205,7 @@
 	color:#444;
 	display:block;
 	font-size:9px;
-	line-height:9px;
+	line-height:5px;
 	margin:0;
 	padding-top:3px;
 }
@@ -216,7 +216,7 @@
 	color:#444;
 	display:block;
 	font-size:9px;
-	line-height:9px;
+	line-height:5px;
 	margin:0;
 	padding-top:3px;
 }
