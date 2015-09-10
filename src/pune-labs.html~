@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome to Virtual Labs - A MHRD Govt of india Initiative">
+    <meta name="author" content="Virtual Labs - A MHRD Govt of india Initiative">
+    
+    <title>Welcome to Virtual Labs - A MHRD Govt of india Initiative</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+ 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.theme.css">
+	
+	<link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.css">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	
+</head>
+<body id="page-top" class="index">
+<div id="top">
+	<header>
+	<!-- Navigation -->
+	    <nav class="navbar navbar-default " style="background-color: white !important; margin-bottom: 0px !important;">
+	        <div class="container-fluid">
+			            <!-- Brand and toggle get grouped for better mobile display -->
+			            <div class="navbar-header page-scroll">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			                    <span class="sr-only">Toggle navigation</span>
+			                    <span class="icon-bar" style="background-color: #77BB41"></span>
+			                    <span class="icon-bar" style="background-color: #77BB41"></span>
+			                    <span class="icon-bar" style="background-color: #77BB41"></span>
+			                </button>
+			                <a class="navbar-brand main-logo-a" href="index.html"><img src="images/logo-new.png" class="img-responsive main-logo" /></a>
+			            </div>			
+			                        
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
+			               
+			                <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
+			                	<li>
+			                		<form method="post">
+			                        	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB"/>
+			                        	<input type="submit" value="" class="search-button" />
+			                        </form>
+			                	</li>
+			                </ul>
+			                
+			                <ul class="nav navbar-nav navbar-right menu-ul">
+			                    <li class="page-scroll menu-li " >
+			                        <a href="index.html#aboutus" class="menu-a" >HOME</a>
+			                    </li>
+			                    <li class="page-scroll menu-li menu-li-active">
+			                        <a href="labs.html"  class="menu-a menu-a-active" >ALL LABS</a>
+			                    </li>
+<!-- 			                    <li class="page-scroll menu-li">
+			                        <a href="#signin"  class="menu-a" >SIGN IN</a>
+			                    </li> -->
+			                     <li class="page-scroll menu-li search-form-li">
+			                        
+			                    </li>
+			                    
+			                </ul>
+			                
+			               
+			                	
+			            </div>
+			            <!-- /.navbar-collapse -->  
+	        </div>
+	        <!-- /.container-fluid -->
+	    </nav>
+	</header>
+
+	<div id="content">
+			<div class="container-fluid" >
+				<div class="row">
+					<hr style="background:#ff6600 !important;  height: 8px; margin-top: 0px;">
+				</div> <!-- row end -->
+			</div> <!-- container-fluid end for slider -->
+			
+			
+			<!-- =================================================================================================================================== -->
+			<div class="container-fluid"  style="margin-left: 35px; margin-right: 35px;">
+				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Institutes</h2>
+					
+					<div class="row">
+						<div class="col-md-2 sidebar-col-2">
+							<a href="iitdelhi-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px; color: #ff6600;"><img src="images/iit/iit-delhi.png" />  IIT DELHI</h3></a>
+							<a href="iitbombay-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"><img src="images/iit/iit-mumbai.png" />  IIT BOMBAY</h3></a>
+							<a href="iitkanpur-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"><img src="images/iit/iit-kanpur.png" />  IIT KANPUR</h3></a>
+							<a href="iitkharagpur-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"><img src="images/iit/iit-kharagpur.png" />  IIT KHARAGPUR</h3></a>
+							<a href="iitmadras-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"><img src="images/iit/iit-madras.png" />  IIT MADRAS</h3></a>
+							<a href="iitroorkee-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> <img src="images/iit/iit-roorkee.png" />  IIT ROORKEE</h3></a>
+							<a href="iitguwahati-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"><img src="images/iit/iit-guwahati.png" />  IIT GUWAHATI</h3></a>
+							<a href="iiithyderabad-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"><img src="images/iit/iithyderabad.jpeg" />  IIIT HYDERABAD</h3></a>
+							<a href="amrita-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"><img src="images/iit/amrita.jpeg" />  AMRITA UNIVERSITY</h3></a>
+							<a href="dayalbagh-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"><img src="images/iit/dayalbagh.jpeg" />  DAYALBAGH UNIVERSITY</h3></a>
+							<a href="nit-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"><img src="images/iit/nit.jpeg" />  NIT KARNATAKA</h3></a>
+							<a href="pune-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"><img src="images/iit/pune.jpeg" />  COE PUNE</h3></a>
+						</div>
+						
+						<div class="col-md-10 lab-list-col-10">
+							<!--<img src="images/engineering/icon_1.png" />--> 
+							<span class="text-normal-gray-big">COE PUNE</span>
+							<br>
+							<p class="text-normal-gray-smallest"  >
+								<ol>
+									<!--<li class="text-normal-gray-smallest" style="text-align: justify;">In order to derive maximum learning experince, the users are advised to first read the instructions for conducting the labs. There are' step-by-step' instructions available in each lab to assist the users.</li>-->
+									<li class="text-normal-gray-smallest" style="text-align: justify;">Some of the labs require the users to log in first. Eventually, there will be a common login for labs.</li>
+									<li class="text-normal-gray-smallest" style="text-align: justify;">Related NPTEL lectures are also available on the link given below.</li>
+								</ol>
+							</p>
+							
+<<<<<<< HEAD
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue">FPGA & Embedded systems lab</p>
+									<!--<p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://vlab.co.in/labs/cse12/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/video.php?subjectId=108102045" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue">Sensors Modeling & Simulation</p>
+									<!--<p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://sl-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<!--<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/Webcourse-contents/IIT%20Kharagpur/Industrial%20Automation%20Automation%2" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>-->
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue">Industrial Automation Laboratory</p>
+									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://ial-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/108105062/12" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue">Electrical Machines</p>
+									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://em-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<!--<div class="col-md-2 lab-list-row-col-2">
+									<a href="#" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>-->
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue">PLC</p>
+									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://plc-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/video.php?subjectId=108105062" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue">Vibration and Acoustics Lab</p>
+									<!-- <p class="text-normal-gray-smallest">  A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://va-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/112103112/17" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue">Micromachining laboratory</p>
+									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://mm-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/112104028/" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+								<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue">FAB laboratory</p>
+									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://fab-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/112107145/" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue">Biomedical and Signal processing Laboratory</p>
+									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="bmsp-coep.vlabs.ac.in" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue">Hybrid electronics Lab</p>
+									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://he-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/117105080/" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+=======
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue"><a href="http://vlab.co.in/labs/cse12/" class="sidebar-a">FPGA & Embedded systems lab</a></p>
+									<!--<p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://vlab.co.in/labs/cse12/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/video.php?subjectId=108102045" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue"><a href="http://sl-coep.vlabs.ac.in/" class="sidebar-a">Sensors Modeling & Simulation</a></p>
+									<!--<p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://sl-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<!--<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/Webcourse-contents/IIT%20Kharagpur/Industrial%20Automation%20Automation%2" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>-->
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue"><a href="http://ial-coep.vlabs.ac.in/" class="sidebar-a"> Industrial Automation Laboratory</a></p>
+									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://ial-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/108105062/12" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue"><a href="http://em-coep.vlabs.ac.in/" class="sidebar-a">Electrical Machines</a></p>
+									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://em-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<!--<div class="col-md-2 lab-list-row-col-2">
+									<a href="#" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>-->
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue"><a href="http://plc-coep.vlabs.ac.in/" class="sidebar-a">PLC</a></p>
+									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://plc-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/video.php?subjectId=108105062" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue"><a href="http://va-coep.vlabs.ac.in/" class="sidebar-a">Vibration and Acoustics Lab</a></p>
+									<!-- <p class="text-normal-gray-smallest">  A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://va-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/112103112/17" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue"><a href="http://mm-coep.vlabs.ac.in/" class="sidebar-a"> Micromachining laboratory</a></p>
+									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://mm-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/112104028/" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+								<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue"><a href="http://fab-coep.vlabs.ac.in/" class="sidebar-a">FAB laboratory</a></p>
+									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://fab-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/112107145/" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue"><a href="bmsp-coep.vlabs.ac.in" class="sidebar-a">Biomedical and Signal processing Laboratory</a></p>
+									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="bmsp-coep.vlabs.ac.in" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue"><a href="http://he-coep.vlabs.ac.in/" class="sidebar-a">Hybrid electronics Lab</a></p>
+									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p> -->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://he-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/117105080/" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+>>>>>>> 2e472c835cc93c57a7441bdb71ccd344faec0a6a
+							</div>
+							
+							
+							
+							<!-- <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Comming Soon</h2>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue" style="margin-bottom: 0px">Advance Communication Lab</p>
+								</div>
+								<div class="col-md-5 ">
+									<p class="text-normal-gray-small" style="margin-bottom: 0px">Name of the University</p>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue" style="margin-bottom: 0px">Microelectronics and VLSI Engineering LAboratory</p>
+								</div>
+								<div class="col-md-5 ">
+									<p class="text-normal-gray-small" style="margin-bottom: 0px">Name of the University</p>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue" style="margin-bottom: 0px">Technology CAD(TCAD) LAboratory</p>
+								</div>
+								<div class="col-md-5 ">
+									<p class="text-normal-gray-small" style="margin-bottom: 0px">Name of the University</p>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue" style="margin-bottom: 0px">Virtual Lab related to Textile Engineering</p>
+								</div>
+								<div class="col-md-5 ">
+									<p class="text-normal-gray-small" style="margin-bottom: 0px">Name of the University</p>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue" style="margin-bottom: 0px">Virtual MEMS Lab</p>
+								</div>
+								<div class="col-md-5 ">
+									<p class="text-normal-gray-small" style="margin-bottom: 0px">Name of the University</p>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue" style="margin-bottom: 0px">Virtual Laboratories for VLSI Design and Verification</p>
+								</div>
+								<div class="col-md-5 ">
+									<p class="text-normal-gray-small" style="margin-bottom: 0px">Name of the University</p>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue" style="margin-bottom: 0px">Virtual Pulse, switching and Analogue circuits</p>
+								</div>
+								<div class="col-md-5 ">
+									<p class="text-normal-gray-small" style="margin-bottom: 0px">Name of the University</p>
+								</div>
+							</div> -->
+							
+						</div>
+					</div>
+			</div>
+			<!-- =================================================================================================================================== -->
+
+
+
+			
+	</div> <!-- content div -->
+		
+	<footer>
+		<div class="container-fluid footer-div" style="background: url('images/footer.png'); margin-top: 40px;  padding: 20px;">
+			<div class="col-md-4 border-right-green-dotted" >
+				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;">Updates</h2>
+				<div><a href="http://vlead.vlabs.ac.in/2015/07/19/lab-integration-kit-1-0-0-released/" class="text-normal-gray-small nounderline" style="color: white" > Lab Integration Kit 1.0.0 Released</a></div>
+				<div><a href="http://vlead.vlabs.ac.in/2015/07/15/summer-sprint-integration-workshop-at-iit-guwahati/" class="text-normal-gray-small nounderline" style="color: white" > Summer Sprint Integration Workshop at IIT Guwahati</a></div>
+				<div><a href="http://vlead.vlabs.ac.in/2014/12/16/a-new-set-of-35-virtual-labs-on-portable-media/" class="text-normal-gray-small nounderline" style="color: white" > A new set of 35 Virtual Labs on Portable Media</a></div>
+			</div>
+			
+			<div class="col-md-2 border-right-green-dotted" >
+<!-- 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;">Nodal Centers</h2>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > REGISTRATION</a></div>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > LOGIN</a></div> -->
+				<!-- <div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Outreach Portal</a></div> -->
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > VLEAD Blog</a></div>
+				<div><a href="http://www.sakshat.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > SAKSHAT PORTAL</a></div>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Nodal Center</a></div>
+			</div>
+			
+			<div class="col-md-3 border-right-green-dotted" >
+<!-- 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FAQ</a></div>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > SAKSHAT PORTAL</a></div> -->
+				<div class="text-h2-lightblue-small"> Contact : <i class="fa fa-envelope-o" style="color: white; font-size: 0.8em;"></i> <a class="text-a-lightgreen" style="text-decoration: underline; font-size: 1.0em;" href="mailto:support@vlab.co.in">support@vlab.co.in</a></div>
+				<div><a href="http://118.102.191.38/feedback/feedback.html" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
+			</div>
+			
+			<div class="col-md-2 border-right-green-dotted" >
+				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;"> Follow us</h2>
+				<a href="https://www.facebook.com/pages/Virtual-Labs-IIT-Delhi/301510159983871" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/fb.png"  style="border-radius: 50%;"/> </a>
+				<a href="https://twitter.com/" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/twitter.png"  style="border-radius: 50%;"/></a>
+				<a href="http://linkedin.com" class="text-a-lightgreen nounderline"  target="_blank" > <img src="images/social/linkedin.png" style="border-radius: 50%;" /></a>
+			</div>
+			
+ 		</div>
+	</footer>
+
+</div> <!-- top div -->
+
+</body>
+
+
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    
+    <!-- Include js plugin -->
+	<script src="vendors/owl-carousel/owl.carousel.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function() {
+		 
+		  var owl = $("#owl-demo");
+		  owl.owlCarousel({
+		      navigation: true,
+		      navigationText: [
+		                       "<img src='images/left-arrow.png'>",
+		                       "<img src='images/right-arrow.png'>"
+		                       ],
+		      /* autoPlay : 3000,
+		      stopOnHover : true */
+		  });
+		  
+		  //owl for partner institutions
+		  var owl = $("#owl-partner-institutions");
+		  owl.owlCarousel({
+		      navigation: true,
+		      navigationText: [
+		                       "<img src='images/left-arrow.png'>",
+		                       "<img src='images/right-arrow.png'>"
+		                       ],
+		      autoPlay : 3000,
+		      stopOnHover : true,
+		      items : 8,
+		  });
+		 
+		
+	
+	 //owl for aboutus
+	  var owl = $("#owl-aboutus");
+	  owl.owlCarousel({
+	      navigation: true,
+	      singleItem:true
+	  });
+	 
+	});
+	</script>
+	
+	
+	

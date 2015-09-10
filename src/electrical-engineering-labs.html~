@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome to Virtual Labs - A MHRD Govt of india Initiative">
+    <meta name="author" content="Virtual Labs - A MHRD Govt of india Initiative">
+    
+    <title>Welcome to Virtual Labs - A MHRD Govt of india Initiative</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+ 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.theme.css">
+	
+	<link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.css">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src = 'tabs.js'></script>
+</head>
+<body id="page-top" class="index">
+<div id="top">
+	<header>
+	<!-- Navigation -->
+	    <nav class="navbar navbar-default " style="background-color: white !important; margin-bottom: 0px !important;">
+	        <div class="container-fluid">
+			            <!-- Brand and toggle get grouped for better mobile display -->
+			            <div class="navbar-header page-scroll">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			                    <span class="sr-only">Toggle navigation</span>
+			                    <span class="icon-bar" style="background-color: #77BB41"></span>
+			                    <span class="icon-bar" style="background-color: #77BB41"></span>
+			                    <span class="icon-bar" style="background-color: #77BB41"></span>
+			                </button>
+			                <a class="navbar-brand main-logo-a" href="index.html"><img src="images/logo-new.png" class="img-responsive main-logo" /></a>
+			            </div>			
+			                        
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
+			               
+			                <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
+			                	<li>
+			                		<form method="get" action="search-result.html">
+			                        	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB" name="q" id="q"/>
+			                        	<input type="submit" value="" class="search-button" />
+			                        </form>
+			                	</li>
+			                </ul>
+			                
+			                <ul class="nav navbar-nav navbar-right menu-ul">
+			                    <li class="page-scroll menu-li " >
+			                        <a href="index.html" class="menu-a" >HOME</a>
+			                    </li>
+			                    <li class="page-scroll menu-li menu-li-active">
+			                        <a href="labs.html"  class="menu-a menu-a-active" >ALL LABS</a>
+			                    </li>
+			                    <li class="page-scroll menu-li " >
+			                        <a href="index.html#partner" class="menu-a" >PARTNERS</a>
+			                    </li><li class="page-scroll menu-li " >
+			                        <a href="index.html#contact" class="menu-a" >CONTACT</a>
+			                    </li>
+			                </ul>
+			                
+			               
+			                	
+			            </div>
+			            <!-- /.navbar-collapse -->  
+	        </div>
+	        <!-- /.container-fluid -->
+	    </nav>
+	</header>
+
+	<div id="content">
+			<div class="container-fluid" >
+				<div class="row">
+					<hr style="background:#ff6600 !important;  height: 8px; margin-top: 0px;">
+				</div> <!-- row end -->
+			</div> <!-- container-fluid end for slider -->
+			
+			
+			<!-- =================================================================================================================================== -->
+			<div class="container-fluid"  style="margin-left: 35px; margin-right: 35px;">
+				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 10px; ">Disciplines and Domains</h2>
+					
+					<div class="row">
+						<div class="col-md-2 sidebar-col-2">
+							<a href="electronics-and-communications-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Electronics & Communications</h3></a>
+							<a href="computer-science-and-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Computer Science & Engineering</h3></a>
+							<a href="electrical-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Electrical Engineering</h3></a>
+							<a href="  mechanical-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Mechanical Engineering</h3></a>
+							<a href="chemical-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Chemical Engineering</h3></a>
+							<a href="biotechnology-and-biochemical-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Biotechnology & Biochemical Engineering</h3></a>
+							<a href="civil-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Civil Engineering</h3></a>
+							<a href="physical-sciences-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Physical Sciences</h3></a>
+							<a href="chemical-sciences-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Chemical Sciences</h3></a>
+						</div>
+						
+						<div class="col-md-10 lab-list-col-10">
+							<img src="images/engineering/icon_3.png" /> 
+							<span class="text-normal-gray-big">Electrical Engineering</span>
+							<br>
+							<p class="text-normal-gray-smallest"  >
+								<ol>
+									<li class="text-normal-gray-smallest" style="text-align: justify;">In order to derive maximum learning experince, the users are advised to first read the instructions for conductiong the labs. There are' step-by-step' instructuins available in each lab to assist the users.</li>
+									<li class="text-normal-gray-smallest" style="text-align: justify;">Some of the labs require the users to log in first. Eventually, there will be a common login for labs.</li>
+									<li class="text-normal-gray-smallest" style="text-align: justify;">Related NPTEL lectures are also available on the link given below.</li>
+								</ol>
+							</p>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<a href="http://vlab.iitr.ac.in/" class="sidebar-a"><p class="text-h3-darkblue">Electrical Machines Lab (Under Maintenance)</p></a>
+									<p class="text-normal-gray-smallest"> The goal of the lab is to make students explore about electrical machinery virtually through simulations.</p	>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<p class="text-normal-gray-small">IIT ROORKEE</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://vlab.iitr.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/108105017/17" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<a href="http://iitg.vlab.co.in/?sub=61&brch=293" class="sidebar-a"> <p class="text-h3-darkblue">Remote Triggered Electromechanical Conversion Laboratory</p></a>
+									<p class="text-normal-gray-smallest"> To perform No Load test of three phase induction motor, To perform Blocked Rotor test of three phase induction motor , To obtain Torque Slip characteristics of three phase induction motor</p	>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<p class="text-normal-gray-small">IIT GUWAHATI</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://iitg.vlab.co.in/?sub=61&brch=293" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/video.php?subjectId=108108076" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<a href="http://sl-coep.vlabs.ac.in/" class="sidebar-a"><p class="text-h3-darkblue">Sensors Modeling & Simulation</p></a>
+									<p class="text-normal-gray-smallest">In this lab, we will do virtual experiments to understand Newton's laws of motion. We will start with a simple pendulum, and from then on, the experiments get more interesting. </p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<p class="text-normal-gray-small">COE PUNE</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://sl-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/Webcourse-contents/IIT%20Kharagpur/Industrial%20Automation%20Automation%2" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<a href="http://ial-coep.vlabs.ac.in/" class="sidebar-a"><p class="text-h3-darkblue">Industrial Automation Laboratory</p></a>
+									<p class="text-normal-gray-smallest">This lab deals with the hardware and software platforms for DCS, analog and digital function blocks, understand and perform experiments on timers and counters and so on...</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<p class="text-normal-gray-small">COE PUNE</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://ial-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/108105062/12" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<a href="http://plc-coep.vlabs.ac.in/" class="sidebar-a"><p class="text-h3-darkblue">PLC</p></a>
+									<p class="text-normal-gray-smallest"> This lab focuses on programmable logic controller, PLC, or programmable controller which is a digital computer used for automation of typically industrial electromechanical processes.</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<p class="text-normal-gray-small">COE PUNE</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://plc-coep.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/video.php?subjectId=108105062" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<a href="http://vlab-ee1.iitkgp.ernet.in/reg.jsp" class="sidebar-a"><p class="text-h3-darkblue">Virtual High Voltage lab</p></a>
+									<p class="text-normal-gray-smallest"> To build the confidence of the user to work in an actual high voltage laboratory and to realize importance and necessity of a High Voltage Laboratory.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                           To provide an effective platform to study the effect of variation of circuit parameters on any high voltage circuit.</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<p class="text-normal-gray-small">IIT KHARAGPUR</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://vlab-ee1.iitkgp.ernet.in/reg.jsp" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="#" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<a href="http://iitkgp.vlab.co.in/?sub=39&brch=124" class="sidebar-a"><p class="text-h3-darkblue">Analog Signals, Network and Measurement Laboratory</p></a>
+									<p class="text-normal-gray-smallest"> To verify Substitution Theorem of a linear electrical circuit, to determine Mutual Inductance of a Bridge Circuit, to determine of Self-Inductance and Capacitance of an Unknown Coil etc;</p	>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<p class="text-normal-gray-small">IIT KHARAGPUR</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://iitkgp.vlab.co.in/?sub=39&brch=124" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptelonlinecourses.iitm.ac.in/courses/117106101/10" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+								<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<a href="http://iitkgp.vlab.co.in/?sub=39&brch=125" class="sidebar-a"><p class="text-h3-darkblue">Real Time Embedded Systems Laboratory</p></a>
+									<p class="text-normal-gray-smallest">This lab gives the basic understanding of experiments like  Digital FIR filter design and simulation, Fixed point Implementation of Digital FIR Filter etc;</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<p class="text-normal-gray-small">IIT KHARAGPUR</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://iitkgp.vlab.co.in/?sub=39&brch=125" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/video.php?subjectId=108102045" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<a href="http://vem-iitg.vlabs.ac.in/" class="sidebar-a"><p class="text-h3-darkblue">Electrical Machines Laboratory</p></a>
+									<p class="text-normal-gray-smallest">This lab is designed to study the generation of magnetic field in a single coil system due to DC and AC current ,to study the behaviour of rotating magnetic field in a two coil system due to AC current etc;</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<p class="text-normal-gray-small">IIT GUWAHATI</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://vem-iitg.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/108105017/17" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<a href="http://iitg.vlab.co.in/?sub=72&brch=170" class="sidebar-a"><p class="text-h3-darkblue">Creative Design, Prototyping & Experiential Simulation Lab</p></a>
+									<p class="text-normal-gray-smallest">Experiments in this lab focus on understanding the theoretical basis of decision making while designing computer screens, displays and product interfaces. </p	>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<p class="text-normal-gray-small">IIT GUWAHATI</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://iitg.vlab.co.in/?sub=72&brch=170" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/106103115/module3/5.pdf" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<a href="http://ergonomics-iitg.vlabs.ac.in/" class="sidebar-a"><p class="text-h3-darkblue">Ergonomics Lab for Assessing Physical Aspects of Design</p></a>
+									<p class="text-normal-gray-smallest">This lab deals with expeiments like Static anthropometry, standing heights, Arm forward reaches, standing erect and forward bend etc;</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<p class="text-normal-gray-small">IIT GUWAHATI</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://ergonomics-iitg.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/107103004/38" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<a href="http://ve-iitg.vlabs.ac.in/" class="sidebar-a"><p class="text-h3-darkblue">Virtual English and Communication Lab</p></a>
+									<p class="text-normal-gray-smallest">This lab is typically taught as a foundation subject as a good command of English is often required for academic study and career progression</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<p class="text-normal-gray-small">IIT GUWAHATI</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://ve-iitg.vlabs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://nptel.ac.in/courses/109104031/" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<a href="http://anthropology-iitg.virtual-labs.ac.in/" class="sidebar-a"><p class="text-h3-darkblue">Virtual Anthropology Lab</p></a>
+									<p class="text-normal-gray-smallest"> This lab focuse on anthropology, which concerns long-term development of the human organism.</p	>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<p class="text-normal-gray-small">IIT GUWAHATI</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://anthropology-iitg.virtual-labs.ac.in/" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://textofvideo.nptel.iitm.ac.in/105104131/lec29.pdf" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+								<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<a href="http://iitg.vlab.co.in/?sub=61&brch=174" class="sidebar-a"><p class="text-h3-darkblue">Electronic instrumentation</p></a>
+									<p class="text-normal-gray-smallest">This lab is to make students, understand the response of standard test signal dynamics, understand the response of standard test signal dynamics & so on ....</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<p class="text-normal-gray-small">IIT GUWAHATI</p>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="http://iitg.vlab.co.in/?sub=61&brch=174" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;" /> LAB</a>
+								</div>
+								<div class="col-md-2 lab-list-row-col-2">
+									<a href="#" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;" /> LECTURE</a>
+								</div>
+							</div>
+							
+							
+							
+							<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Coming Soon</h2>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue" style="margin-bottom: 0px">Virtual Power Laboratory</p>
+								</div>
+								<div class="col-md-5 ">
+									<p class="text-normal-gray-small" style="margin-bottom: 0px">DAYALBAGH</p>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue" style="margin-bottom: 0px">Power Electronics and Electric Drives Laboratory</p>
+								</div>
+								<div class="col-md-5 ">
+									<p class="text-normal-gray-small" style="margin-bottom: 0px">IIT DELHI</p>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue" style="margin-bottom: 0px">Industrial Electric Drives And Substation Automation Lab</p>
+								</div>
+								<div class="col-md-5 ">
+									<p class="text-normal-gray-small" style="margin-bottom: 0px">NIT KARNATAKA</p>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue" style="margin-bottom: 0px"> Electrical Machines</p>
+								</div>
+								<div class="col-md-5 ">
+									<p class="text-normal-gray-small" style="margin-bottom: 0px">COE PUNE</p>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue" style="margin-bottom: 0px">Power System Lab</p>
+								</div>
+								<div class="col-md-5 ">
+									<p class="text-normal-gray-small" style="margin-bottom: 0px">IIT BOMBAY</p>
+								</div>
+							</div>
+							
+							<div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue" style="margin-bottom: 0px">Electrical Machines, Power Electronics & Drives, Power Systems & Instrumentation</p>
+								</div>
+								<div class="col-md-5 ">
+									<p class="text-normal-gray-small" style="margin-bottom: 0px">IIT MADRAS</p>
+								</div>
+							</div>
+							
+						       <div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue" style="margin-bottom: 0px">Virtual Circuits Laboratory</p>
+								</div>
+								<div class="col-md-5 ">
+									<p class="text-normal-gray-small" style="margin-bottom: 0px">IIT MADRAS</p>
+								</div>
+							</div>
+							
+
+                                                                   <div style="margin-top: 20px; " class="lab-list-row-div">
+								<div class="col-md-5">
+									<p class="text-h3-darkblue" style="margin-bottom: 0px">Virtual Interactive Lab</p>
+								</div>
+								<div class="col-md-5 ">
+									<p class="text-normal-gray-small" style="margin-bottom: 0px">IIT GUWAHATI</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<!-- =================================================================================================================================== -->
+
+
+
+			
+	</div> <!-- content div -->
+		
+	<footer>
+		<div class="container-fluid footer-div" style="background: url('images/footer.png'); margin-top: 40px;  padding: 20px;">
+			<div class="col-md-4 border-right-green-dotted" >
+				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;">Updates</h2>
+				<div><a href="http://vlead.vlabs.ac.in/2015/07/19/lab-integration-kit-1-0-0-released/" class="text-normal-gray-small nounderline" style="color: white" > Lab Integration Kit 1.0.0 Released</a></div>
+				<div><a href="http://vlead.vlabs.ac.in/2015/07/15/summer-sprint-integration-workshop-at-iit-guwahati/" class="text-normal-gray-small nounderline" style="color: white" > Summer Sprint Integration Workshop at IIT Guwahati</a></div>
+				<div><a href="http://vlead.vlabs.ac.in/2014/12/16/a-new-set-of-35-virtual-labs-on-portable-media/" class="text-normal-gray-small nounderline" style="color: white" > A new set of 35 Virtual Labs on Portable Media</a></div>
+			</div>
+			
+			<div class="col-md-2 border-right-green-dotted" >
+<!-- 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;">Nodal Centers</h2>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > REGISTRATION</a></div>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > LOGIN</a></div> -->
+				<!-- <div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Outreach Portal</a></div> -->
+				<div><a href="http://vlead.virtual-labs.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > VLEAD Blog</a></div>
+				<div><a href="http://www.sakshat.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Sakshat Portal</a></div>
+				<div><a href="http://118.102.191.38/feedback/Registration.html" class="text-a-lightgreen" style="text-decoration: underline;" > Nodal Center</a></div>
+			</div>
+			
+			<div class="col-md-3 border-right-green-dotted" >
+<!-- 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FAQ</a></div>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > SAKSHAT PORTAL</a></div> -->
+				<div class="text-h2-lightblue-small"> Contact : <i class="fa fa-envelope-o" style="color: white; font-size: 0.8em;"></i> <a class="text-a-lightgreen" style="text-decoration: underline; font-size: 1.0em;" href="mailto:support@vlab.co.in">support@vlabs.ac.in</a></div>
+				<div><a href="http://118.102.191.38/feedback/feedback.html" class="text-a-lightgreen" style="text-decoration: underline;" > Feedback</a></div>
+			</div>
+			
+			<div class="col-md-2 border-right-green-dotted" >
+				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;"> Follow us</h2>
+				<a href="https://www.facebook.com/pages/Virtual-Labs-IIT-Delhi/301510159983871" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/fb.png"  style="border-radius: 50%;"/> </a>
+				<a href="https://twitter.com/TheVirtualLabs" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/twitter.png"  style="border-radius: 50%;"/></a>
+				
+			</div>
+			
+ 		</div>
+	</footer>
+
+</div> <!-- top div -->
+
+</body>
+
+
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    
+    <!-- Include js plugin -->
+	<script src="vendors/owl-carousel/owl.carousel.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function() {
+		 
+		  var owl = $("#owl-demo");
+		  owl.owlCarousel({
+		      navigation: true,
+		      navigationText: [
+		                       "<img src='images/left-arrow.png'>",
+		                       "<img src='images/right-arrow.png'>"
+		                       ],
+		      /* autoPlay : 3000,
+		      stopOnHover : true */
+		  });
+		  
+		  //owl for partner institutions
+		  var owl = $("#owl-partner-institutions");
+		  owl.owlCarousel({
+		      navigation: true,
+		      navigationText: [
+		                       "<img src='images/left-arrow.png'>",
+		                       "<img src='images/right-arrow.png'>"
+		                       ],
+		      autoPlay : 3000,
+		      stopOnHover : true,
+		      items : 8,
+		  });
+		 
+		
+	
+	 //owl for aboutus
+	  var owl = $("#owl-aboutus");
+	  owl.owlCarousel({
+	      navigation: true,
+	      singleItem:true
+	  });
+	 
+	});
+	</script>
+	
+	
+	
+</html>

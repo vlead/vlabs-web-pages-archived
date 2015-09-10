@@ -23,7 +23,7 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-	
+	<script type="text/javascript" src = 'tabs.js'></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67020197-1', 'auto');ga('send', 'pageview');</script>	
 </head>
 <body id="page-top" class="index">
 <div id="top">
@@ -47,8 +47,8 @@
 			               
 			                <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
 			                	<li>
-			                		<form method="post">
-			                        	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB"/>
+			                		<form method="get" action="search-result.html">
+			                        	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB" name="q" id="q"/>
 			                        	<input type="submit" value="" class="search-button" />
 			                        </form>
 			                	</li>
@@ -56,18 +56,16 @@
 			                
 			                <ul class="nav navbar-nav navbar-right menu-ul">
 			                    <li class="page-scroll menu-li " >
-			                        <a href="index.html#aboutus" class="menu-a" >HOME</a>
+			                        <a href="index.html" class="menu-a" >HOME</a>
 			                    </li>
 			                    <li class="page-scroll menu-li menu-li-active">
 			                        <a href="labs.html"  class="menu-a menu-a-active" >ALL LABS</a>
 			                    </li>
-<!-- 			                    <li class="page-scroll menu-li">
-			                        <a href="#signin"  class="menu-a" >SIGN IN</a>
-			                    </li> -->
-			                     <li class="page-scroll menu-li search-form-li">
-			                        
+			                    <li class="page-scroll menu-li " >
+			                        <a href="index.html#partner" class="menu-a" >PARTNERS</a>
+			                    </li><li class="page-scroll menu-li " >
+			                        <a href="index.html#contact" class="menu-a" >CONTACT</a>
 			                    </li>
-			                    
 			                </ul>
 			                
 			               
@@ -89,16 +87,16 @@
 			
 			<!-- =================================================================================================================================== -->
 			<div class="container-fluid"  style="margin-left: 35px; margin-right: 35px;">
-				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Disciplines and Domains</h2>
+				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 10px; ">Disciplines and Domains</h2>
 					
 					<div class="row">
 						<div class="col-md-2 sidebar-col-2">
-							<a href=" electronics-and-communications-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px; color: #ff6600;"> Electronics & Communications</h3></a>
+							<a href=" electronics-and-communications-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Electronics & Communications</h3></a>
 							<a href="computer-science-and-engineering-labs.html " class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Computer Science & Engineering</h3></a>
 							<a href="electrical-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Electrical Engineering</h3></a>
 							<a href=" mechanical-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Mechanical Engineering</h3></a>
 							<a href="chemical-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Chemical Engineering</h3></a>
-							<a href="biotechnology-and-biochemical-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Biotechnology & Biochemical Engineering</h3></a>
+							<a href="biotechnology-and-biochemical-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Biotechnology & Biomedical Engineering</h3></a>
 							<a href="civil-engineering-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Civil Engineering</h3></a>
 							<a href="physical-sciences-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Physical Sciences</h3></a>
 							<a href="chemical-sciences-labs.html" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;"> Chemical Sciences</h3></a>
@@ -118,7 +116,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Strength of Materials Lab</p>
+									<p class="text-h3-darkblue"><a href="http://eerc01-iiith.vlabs.ac.in/" class="sidebar-a">Strength of Materials Lab</a></p>
 									<p class="text-normal-gray-smallest"> This lab consists of different materials in tension, torsion, bending, and buckling etc.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -134,7 +132,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Fluid Mechanics Lab</p>
+									<p class="text-h3-darkblue"><a href="http://eerc03-iiith.vlabs.ac.in/" class="nounderline"><a href="http://eerc03-iiith.vlabs.ac.in/" class="sidebar-a">Fluid Mechanics Lab</a></p>
 									<p class="text-normal-gray-smallest"> The lab is equipped with different flow measuring set-ups such as venturimeter, orifice-plate, pitot tube, rotometer etc.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -150,7 +148,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Soil Mechanics Lab</p>
+									<p class="text-h3-darkblue"><a href="http://eerc02-iiith.virtual-labs.ac.in/" class="sidebar-a">Soil Mechanics Lab</a></p>
 									<p class="text-normal-gray-smallest"> this lab consists different laboratory for conducting the following important experiments to estimate the mechanical and engineering properties of soils.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -166,7 +164,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Basic Structural Analysis Lab</p>
+									<p class="text-h3-darkblue"><a href="http://eerc04-iiith.virtual-labs.ac.in/" class="sidebar-a">Basic Structural Analysis Lab</a></p>
 									<p class="text-normal-gray-smallest"> This laboratory gives the basic understanding of structural member under the action of loads. How structure's behaviour will be changed if there is any redundancy and how suddenly it becomes unstable will be experienced by student.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -182,7 +180,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Geotechnical Engineering</p>
+									<p class="text-h3-darkblue"><a href="http://eerc05-iiith.virtual-labs.ac.in/" class="sidebar-a">Geotechnical Engineering</a></p>
 									<p class="text-normal-gray-smallest"> This lab is to carry out all soil mechanics fundamental experiments according to standards and to analyze and interpret experimental data.</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -198,8 +196,8 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Virtual Smart Structures and Dynamics Lab</p>
-									<p class="text-normal-gray-smallest"> This lab defines a structural system having built-in or intrinsic sensors, actuators and control mechanism whereby it is capable of sensing a stimulus, responding to it in a predetermined manner and extent, in a short time.</p	>
+									<p class="text-h3-darkblue"><a href="http://vssd-iitd.vlabs.ac.in/" class="sidebar-a">Virtual Smart Structures and Dynamics Lab</a></p>
+									<p class="text-normal-gray-smallest"> This lab defines a structural system having built-in or intrinsic sensors, actuators and control mechanism whereby it is capable of sensing a stimulus, responding to it in a predetermined manner and extent, in a short time.</p>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
 									<p class="text-normal-gray-small">IIT DELHI</p>
@@ -214,7 +212,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Virtual Satellite Image Processing & Analysis Lab</p>
+									<p class="text-h3-darkblue"><a href="http://civil11.virtual-labs.ac.in/siplabs/" class="sidebar-a">Virtual Satellite Image Processing & Analysis Lab (Under Maintenance)</a></p>
 									<p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -230,7 +228,7 @@
 							
 								<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Urban Transportation Systems Planning Lab</p>
+									<p class="text-h3-darkblue"><a href="http://deploy.virtual-labs.ac.in/labs/civil13/" class="sidebar-a">Urban Transportation Systems Planning Lab (Under Maintenance)</a></p>
 									<p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -246,7 +244,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Soft Computing Tools in Engineering</p>
+									<p class="text-h3-darkblue"><a href="http://www.sctie.iitkgp.ernet.in/" class="sidebar-a">Soft Computing Tools in Engineering</a></p>
 									<p class="text-normal-gray-smallest"> The main objective of the proposed virtual lab is to introduce students about the latest Computational Intelligence Tools ( also known as soft computing tools)</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -262,7 +260,7 @@
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
-									<p class="text-h3-darkblue">Surveying Lab</p>
+									<p class="text-h3-darkblue"><a href="http://vlabcivil-iitr.co.in/" class="sidebar-a">Surveying Lab</a></p>
 									<p class="text-normal-gray-smallest"> This lab is to study of various parts of Auto Level and Carry out Fly Leveling using Auto Leve and Detail Plotting by Radiation Method.l</p	>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
@@ -276,7 +274,7 @@
 								</div>
 							</div>
 							
-							<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Comming Soon</h2>
+							<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Coming Soon</h2>
 							
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
@@ -338,25 +336,25 @@
 <!-- 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;">Nodal Centers</h2>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > REGISTRATION</a></div>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > LOGIN</a></div> -->
+
 				<!-- <div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Outreach Portal</a></div> -->
-				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > VLEAD Blog</a></div>
-				<div><a href="http://www.sakshat.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > SAKSHAT PORTAL</a></div>
-				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Nodal Center</a></div>
+				<div><a href="http://vlead.virtual-labs.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > VLEAD Blog</a></div>
+				<div><a href="http://www.sakshat.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Sakshat Portal</a></div>
+				<div><a href="http://118.102.191.38/feedback/Registration.html" class="text-a-lightgreen" style="text-decoration: underline;" > Nodal Center</a></div>
 			</div>
 			
 			<div class="col-md-3 border-right-green-dotted" >
 <!-- 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FAQ</a></div>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > SAKSHAT PORTAL</a></div> -->
-				<div class="text-h2-lightblue-small"> Contact : <i class="fa fa-envelope-o" style="color: white; font-size: 0.8em;"></i> <a class="text-a-lightgreen" style="text-decoration: underline; font-size: 1.0em;" href="mailto:support@vlab.co.in">support@vlab.co.in</a></div>
-				<div><a href="http://118.102.191.38/feedback/feedback.html" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
+				<div class="text-h2-lightblue-small"> Contact : <i class="fa fa-envelope-o" style="color: white; font-size: 0.8em;"></i> <a class="text-a-lightgreen" style="text-decoration: underline; font-size: 1.0em;" href="mailto:support@vlab.co.in">support@vlabs.ac.in</a></div>
+				<div><a href="http://118.102.191.38/feedback/feedback.html" class="text-a-lightgreen" style="text-decoration: underline;" > Feedback</a></div>
 			</div>
 			
 			<div class="col-md-2 border-right-green-dotted" >
 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;"> Follow us</h2>
 				<a href="https://www.facebook.com/pages/Virtual-Labs-IIT-Delhi/301510159983871" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/fb.png"  style="border-radius: 50%;"/> </a>
-				<a href="https://twitter.com/" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/twitter.png"  style="border-radius: 50%;"/></a>
-				<a href="http://linkedin.com" class="text-a-lightgreen nounderline"  target="_blank" > <img src="images/social/linkedin.png" style="border-radius: 50%;" /></a>
+				<a href="https://twitter.com/TheVirtualLabs" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/twitter.png"  style="border-radius: 50%;"/></a>
 			</div>
 			
  		</div>
@@ -418,7 +416,5 @@
 	 
 	});
 	</script>
-	
-	
 	
 </html>
