@@ -54,7 +54,7 @@ heading=str(tagger[0].text)
 print heading
 heading=heading.strip()
 print heading
-breadcrumb='<a href="../../../computer-science-and-engineering-labs.html" class="sidebar-a" >Computer Science & Engineering</a><br/>'
+breadcrumb='<a href="http://vlabs.ac.in/computer-science-and-engineering-labs.html" class="sidebar-a" >Computer Science & Engineering</a><br/>'
 while sectionNumber<=len(sectionno):
 	tag=""
 	att = ''+'lab-article-section-'+str(sectionNumber)+'-heading'
@@ -90,9 +90,34 @@ while sectionNumber<=len(sectionno):
 	#print tag
 	#print st
 	
-	
 	writefile(tag1+'.html',tag,st,heading)
 	#print sectionNumber
 	sectionNumber=sectionNumber+1
+f=open("Feedback.html",'w+')
+f.write(template)
+f.seek(0)
 	
-
+content = f.read()
+content=content.replace('Disciplines and Domains',breadcrumb)
+f.seek(0)
+f.write(content)
+#print content
+f.seek(0)
+content=f.read()
+k=content.index('<div class="col-md-10 lab-list-col-10">')
+	
+t1=content.index('<!--edit1-->')
+print t1
+f.seek(t1+13)
+st=st+f.read()
+#print s1
+f.seek(t1+13)
+f.write(st)
+f.seek(0)
+content=f.read()
+t= content.index('<!--edit -->')
+f.seek(t+13)
+s='<h1 class="text-h2-lightblue">'+heading+'</h1>'+'<a href="http://feedback.vlabs.ac.in/">Feedback</a>'
+s=s+f.read()
+f.seek(t+13)
+f.write(s)
