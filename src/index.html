@@ -25,14 +25,17 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/venk.css" rel="stylesheet">
 	<script type="text/javascript" src = 'tabs.js'></script>
-	<script type="text/javascript" language="javascript">
-         //$(document).ready(function() {
-         window.onload = function() {
-               $.getJSON('http://stats.virtual-labs.ac.in/numberofhits', function(data) {
-                       $("#analytics").html(data);
-               });
-         };
-</script>
+    <script type="text/javascript" language="javascript">
+      window.onload = function() {
+      $.getJSON('http://analytics-server.base4.vlabs.ac.in/analytics', function(data) {
+      $("#visits").html(data["visits"]);
+      $("#usage").html(data["usage"]);
+      });
+      };
+      function myFunction() {
+      window.open("underscore.html");
+      }
+    </script>
 
 </head>
 <body id="page-top" class="index">
@@ -104,13 +107,16 @@
 							<span class="banner-text-small">Accessed</span> <span id="analytics" class="banner-text-big"></span> <sup class="banner-text-medium">+</sup>
 						</div> -->
 
-						<div class="baneer-text-sub-div banner-text-3">
-							<span class="banner-text-small">Visits</span> <span id="analytics" class="banner-text-big"></span> <sup class="banner-text-medium">+</sup>
-						</div>
+					<!--	<div class="baneer-text-sub-div banner-text-3">
+							<span class="banner-text-small">Hits</span> <span id="hits" class="banner-text-big"></span> <sup class="banner-text-medium">+</sup>
+						</div>-->
 
-<!-- 						<div class="baneer-text-sub-div banner-text-4">
-							<span class="banner-text-small">Institutions</span> <span class="banner-text-big">1784</span> <sup class="banner-text-medium">+</sup>
-						</div> -->
+ 						<div class="baneer-text-sub-div banner-text-4">
+							<span class="banner-text-small">Visits</span> <span id="visits" class="banner-text-big">1784</span> <sup class="banner-text-medium">+</sup>
+						</div>
+						<div class="baneer-text-sub-div banner-text-4">
+							<span class="banner-text-small" onclick="myFunction()">Usage</span> <span id="usage" class="banner-text-big">1784</span> <sup class="banner-text-medium">+</sup>
+						</div>
 
 					</div>
 
