@@ -41,8 +41,10 @@
         function generateHTML() {
 	$.getJSON('http://analytics-server.base4.vlabs.ac.in/analytics/labs', function(data) {
 	
-      
-            var data = { target:data };
+	    var sorted_data = _.sortBy(data, 'usage');
+            var data = { target:sorted_data.reverse() };
+
+
 	
             var template = _.template( $("#tpl-html").text() );
             $("#output").html( template(data) );
