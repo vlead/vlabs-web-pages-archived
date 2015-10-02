@@ -42,7 +42,9 @@
 	$.getJSON('http://analytics-server.base4.vlabs.ac.in/analytics/labs', function(data) {
 	
 	    var sorted_data = _.sortBy(data, 'usage');
-            var data = { target:sorted_data.reverse() };
+	    var reverse_data = sorted_data.reverse();
+	    var slice_data = reverse_data.slice(0,2)
+            var data = { target:slice_data };
 
 
 	
