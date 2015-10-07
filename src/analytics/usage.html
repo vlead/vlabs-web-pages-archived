@@ -32,19 +32,19 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th>Lab Name</th>
-                    <th>Hits</th>
-                    <th>Visits</th>
-                    <th>Usage</th>
+                    <th class = "text-h3-darkblue" style= "margin-top: 2px;">Lab Name</th>
+                    <th class = "text-h3-darkblue" style= "margin-top: 2px;">Hits</th>
+                    <th class = "text-h3-darkblue" style= "margin-top: 2px;">Visits</th>
+                    <th class = "text-h3-darkblue" style= "margin-top: 2px;">Usage</th>
                 </tr>
                 </thead>
                 <tbody>
                 <% _.each( target, function(i) {%>
                     <tr>
-                        <td><%= i.lab_id %></td>
-                        <td><%= i.hits %></td>
-                        <td><%= i.visits %></td>
-                        <td><%= i.usage %></td>
+                        <td class= "text-normal-gray-small"><%= i.lab_id %></td>
+                        <td class= "text-normal-gray-small"><%= i.hits %></td>
+                        <td class= "text-normal-gray-small"><%= i.visits %></td>
+                        <td class= "text-normal-gray-small"><%= i.usage %></td>
                     </tr>
 		    
                 <% }); %>
@@ -152,16 +152,16 @@
 			<!-- =================================================================================================================================== -->
 			<div class="container" >
 				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Analytics</h2>
-
+				<h2 class="text-h3-darkblue-bold" style="margin-top: 2px; ">Top 10 Labs</h2>
 						<div>
 						<div class="navbar-inner">
 						    <div id="output"></div>
-						    <h2 class="text-h2-lightblue"></h2> <a href="javascript:generateAllLabs()" class="btn" id="html">More Labs</a>
+						    <h2 class="text-h2-lightblue"></h2> <a href="javascript:generateAllLabs()">Click Here to view More Labs</a>
 						  </div>
 						</div>
 						
 				</div>
-			        <div id="output1">Click on the above link to view more labs.</div>
+			        <div id="output1"></div>
 				<div class="col-md-10 lab-list-col-10">
 						<!--edit -->
 		
