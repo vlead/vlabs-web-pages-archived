@@ -28,10 +28,7 @@
     <script type="text/javascript" src="https://raw.github.com/douglascrockford/JSON-js/master/json2.js"></script>
 
  
-
-
     <script type="text/template" id="tpl-html">
-        <div class="well">
             <table class="table">
                 <thead>
                 <tr>
@@ -44,10 +41,10 @@
                 <tbody>
                 <% _.each( target, function(i) {%>
                     <tr>
-                        <td width="100"><%= i.lab_id %></td>
-                        <td width="100"><%= i.hits %></td>
-                        <td width="100"><%= i.visits %></td>
-                        <td width="100"><%= i.usage %></td>
+                        <td><%= i.lab_id %></td>
+                        <td><%= i.hits %></td>
+                        <td><%= i.visits %></td>
+                        <td><%= i.usage %></td>
                     </tr>
 		    
                 <% }); %>
@@ -56,22 +53,32 @@
                 </tbody>
             </table>
 	    <div id="output1"></div>
-     </div>
+
     </script>
 </script>   
     <script>
          
-        function generateHTML() {
+        function generateTopLabs() {
 	$.getJSON('http://analytics-server.base4.vlabs.ac.in/analytics/labs', function(data) {
 	    var sorted_data = _.sortBy(data, 'usage');
 	    var reverse_data = sorted_data.reverse();
 	    var slice_data = reverse_data.slice(0,9)
             var data = { target:slice_data };
-	    var all_data = { target:reverse_data };
 
             var template = _.template( $("#tpl-html").text() );
             $("#output").html( template(data) );
-	   <!-- $("#output1").html( template(all_data) );-->
+            $("a").removeClass("btn-warning");
+            $("#html").addClass("btn-warning");
+	    
+});        
+}
+ function generateAllLabs() {
+	$.getJSON('http://analytics-server.base4.vlabs.ac.in/analytics/labs', function(data) {
+	    var sorted_data = _.sortBy(data, 'lab_id');
+	    var all_data = { target:sorted_data };
+
+            var template = _.template( $("#tpl-html").text() );
+	    $("#output1").html( template(all_data) );
             $("a").removeClass("btn-warning");
             $("#html").addClass("btn-warning");
 	    
@@ -80,12 +87,12 @@
     </script>
 	
 </head>
-<body id="page-top" class="index">
+<body id="page-top" class="index" onload="generateTopLabs()">
 <div id="top">
 	<header>
 	<!-- Navigation -->
 	    <nav class="navbar navbar-default " style="background-color: white !important; margin-bottom: 0px !important;">
-	        <div class="container-fluid">
+	        <div class="container">
 			            <!-- Brand and toggle get grouped for better mobile display -->
 			            <div class="navbar-header page-scroll">
 			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -135,7 +142,7 @@
 	</header>
 
 	<div id="content">
-			<div class="container-fluid" >
+			<div class="container" >
 				<div class="row">
 					<hr style="background:#ff6600 !important;  height: 8px; margin-top: 0px;">
 				</div> <!-- row end -->
@@ -143,16 +150,18 @@
 			
 			
 			<!-- =================================================================================================================================== -->
-			<div class="container-fluid"  style="margin-left: 35px; margin-right: 35px;">
+			<div class="container" >
 				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Analytics</h2>
 
 						<div>
-						  <div class="navbar-inner">
-						    <h2 class="text-h2-lightblue"></h2> <a href="javascript:generateHTML()" class="btn" id="html">Top 10 Labs</a>
+						<div class="navbar-inner">
+						    <div id="output"></div>
+						    <h2 class="text-h2-lightblue"></h2> <a href="javascript:generateAllLabs()" class="btn" id="html">More Labs</a>
 						  </div>
 						</div>
-						<div id="output">Click on the above link to view lab wise Hits, Visits and Usage.</div>
+						
 				</div>
+			        <div id="output1">Click on the above link to view more labs.</div>
 				<div class="col-md-10 lab-list-col-10">
 						<!--edit -->
 		
