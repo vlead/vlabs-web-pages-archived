@@ -41,7 +41,7 @@
         </thead>
         <tbody>
 	  <% _.each( target, function(i) {%>
-	  <% if (i.lab_name !== "None") { %>
+	  <% if ((i.lab_name !== "None") && (i.usage > 100)) { %>
           <tr>
 	    <td class= "text-normal-gray-small"><%= i.lab_name %></td>
             <td class= "text-normal-gray-small"><%= i.institute_name %></td>
