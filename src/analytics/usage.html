@@ -32,7 +32,6 @@
             <table class="table">
                 <thead>
                 <tr>
-		  <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Lab id</th>
                     <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Lab Name</th>
                     <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Institute Name</th>
                     <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Hits</th>
@@ -43,7 +42,6 @@
                 <tbody>
                 <% _.each( target, function(i) {%>
                     <tr>
-                        <td class= "text-normal-gray-small"><%= i.lab_id %></td>
 			<td class= "text-normal-gray-small"><%= i.lab_name %></td>
                         <td class= "text-normal-gray-small"><%= i.institute_name %></td>
                         <td class= "text-normal-gray-small"><%= i.hits %></td>
@@ -78,8 +76,9 @@
 }
  function generateAllLabs() {
 	$.getJSON('http://analytics-server.base4.vlabs.ac.in/analytics/labs', function(data) {
-	    var sorted_data = _.sortBy(data, 'lab_id');
-	    var all_data = { target:sorted_data };
+	    var sorted_data = _.sortBy(data, 'usage');
+	    var reverse_data = sorted_data.reverse();
+	    var all_data = { target:reverse_data };
 
             var template = _.template( $("#tpl-html").text() );
 	    $("#output1").html( template(all_data) );
