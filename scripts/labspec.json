@@ -21,45 +21,45 @@
                 {
                     "contact": {
                         "alternate_email": "", 
-                        "email": "jawahar@iiit.ac.in", 
+                        "email": "sanchita@vlabs.ac.in", 
                         "mobile_number": "", 
                         "office_number": ""
                     }, 
                     "department": "", 
                     "institute": "IIIT Hyderabad", 
-                    "name": "Jawahar C.V", 
+                    "name": "sanchita-dixit", 
                     "organization": "", 
-                    "role": "Lab Developer", 
+                    "role": "Project Engineer", 
                     "title": "", 
                     "web": ""
                 }, 
                 {
                     "contact": {
                         "alternate_email": "", 
-                        "email": "phani@iiit.ac.in", 
+                        "email": "khushpreet@vlabs.ac.in ", 
                         "mobile_number": "", 
                         "office_number": ""
                     }, 
                     "department": "", 
                     "institute": "IIIT Hyderabad", 
-                    "name": "Phani Phani", 
+                    "name": "khushpreet-kaur", 
                     "organization": "", 
-                    "role": "Lab RA", 
+                    "role": "Project Enginner", 
                     "title": "", 
                     "web": ""
                 }, 
                 {
                     "contact": {
                         "alternate_email": "", 
-                        "email": "kumarsrijan@students.iiit.ac.in", 
+                        "email": "dinesh.padisetti@vlabs.ac.in ", 
                         "mobile_number": "", 
                         "office_number": ""
                     }, 
                     "department": "", 
                     "institute": "IIIT Hyderabad", 
-                    "name": "Kumar Srijan", 
+                    "name": "Dinesh Padisetti", 
                     "organization": "", 
-                    "role": "Lab RA", 
+                    "role": "Project Engineer", 
                     "title": "", 
                     "web": ""
                 }, 
@@ -74,32 +74,32 @@
                     "institute": "IIIT Hyderabad", 
                     "name": "Jay Panda", 
                     "organization": "", 
-                    "role": "Lab RA", 
+                    "role": "Project Engineer", 
                     "title": "", 
                     "web": ""
                 }, 
                 {
                     "contact": {
                         "alternate_email": "", 
-                        "email": "shashank.sharmaug08@students.iiit.ac.in", 
+                        "email": "sravanthimodepu@vlabs.ac.in ", 
                         "mobile_number": "", 
                         "office_number": ""
                     }, 
                     "department": "", 
                     "institute": "IIIT Hyderabad", 
-                    "name": "Shashank Sharma", 
+                    "name": "sravanthimodepu", 
                     "organization": "", 
-                    "role": "Lab RA", 
+                    "role": "Project Assistant Engineer", 
                     "title": "", 
                     "web": ""
                 }
             ], 
             "discipline": [
-                "Computer Science & Engineering"
+                ""
             ], 
-            "id": "cse02", 
+            "id": "www.vlabs.ac.in", 
             "integration_level": 5, 
-            "name": "Computer Programming", 
+            "name": "vlab-web-pages", 
             "server-side": true, 
             "status": "Released", 
             "type": ""
