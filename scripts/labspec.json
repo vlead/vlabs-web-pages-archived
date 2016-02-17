@@ -4,7 +4,7 @@
             "platform": {
                 "arch": "i386", 
                 "build_steps": {
-                    "build": [], 
+                    "build": ["make -C ../src"], 
                     "configure": [], 
                     "post_build": [], 
                     "pre_build": [], 
@@ -113,7 +113,7 @@
                 "lab_actions": {
                     "backup": [], 
                     "clean": [], 
-                    "init": ["mv /var/www/index.html index.html.default", "cp -rf * /var/www/"
+                    "init": ["mv /var/www/index.html index.html.default", "cp -rf ../build/* /var/www/"
                         ], 
                     "pause": [], 
                     "publish": [], 
