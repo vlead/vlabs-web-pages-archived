@@ -33,7 +33,9 @@
         <thead>
           <tr>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Lab Name</th>
-            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Institute Name</th>
+
+            <!--<th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Institute Name</th>-->
+
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Hits</th>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Visits</th>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Usage</th>
@@ -43,11 +45,11 @@
 	  <% _.each( target, function(i) {%>
 	  <% if ((i.lab_name !== "None") && (i.usage > 100)) { %>
           <tr>
-	    <td class= "text-normal-gray-small"><%= i.lab_name %></td>
-            <td class= "text-normal-gray-small"><%= i.institute_name %></td>
-            <td class= "text-normal-gray-small"><%= i.hits %></td>
-            <td class= "text-normal-gray-small"><%= i.visits %></td>
-            <td class= "text-normal-gray-small"><%= i.usage %></td>
+	    <td><%= i.lab_name %></td>
+            <!--<td><%= i.institute_name %></td>-->
+            <td><%= i.hits %></td>
+            <td><%= i.visits %></td>
+            <td><%= i.usage %></td>
           </tr>
 	  <% } %>    
           <% }); %>
@@ -60,7 +62,7 @@
 <script>
          
   function generateTopLabs() {
-  $.getJSON('http://analytics-server.base4.vlabs.ac.in/analytics/labs', function(data) {
+  $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
   var sorted_data = _.sortBy(data, 'usage');
   var reverse_data = sorted_data.reverse();
   var slice_data = reverse_data.slice(0,9)
@@ -74,7 +76,7 @@
   });        
   }
   function generateAllLabs() {
-  $.getJSON('http://analytics-server.base4.vlabs.ac.in/analytics/labs', function(data) {
+  $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
   var sorted_data = _.sortBy(data, 'usage');
   var reverse_data = sorted_data.reverse();
   var all_data = { target:reverse_data };
@@ -122,16 +124,17 @@
 		  <li class="page-scroll menu-li " >
 		    <a href="../index.html" class="menu-a" >HOME</a>
 		  </li>
-		  <li class="page-scroll menu-li menu-li-active">
-		    <a href="../labs.html"  class="menu-a menu-a-active" >ALL LABS</a>
+		  <li class="page-scroll menu-li">
+		    <a href="../labs.html"  class="menu-a" >ALL LABS</a>
 		  </li>
 		  <!-- 			                    <li class="page-scroll menu-li">
 							    <a href="#signin"  class="menu-a" >SIGN IN</a>
 		  </li> -->
-		  <li class="page-scroll menu-li search-form-li">
-		    
-		  </li>
-		  
+		  <li class="page-scroll menu-li " >
+        <a href="../index.html#partner" class="menu-a" >PARTNERS</a>
+      </li><li class="page-scroll menu-li " >
+      <a href="../index.html#contact" class="menu-a" >CONTACT</a>
+    </li>
 		</ul>
 		
 		
@@ -153,10 +156,98 @@
       
       <!-- =================================================================================================================================== -->
       <div class="container" >
-	<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Analytics</h2>
+      <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Workshop Analytics</h2>
+      <div style="margin-bottom: 50px;">
+        <table class="table">
+        <thead>
+          <tr>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Institute</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">No. of Nodal centers</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Usages of Virtual Labs</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">No. of Workshops</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>IIT-D</td>
+            <td>30</td>
+            <td>58,949</td>
+            <td>41</td>
+          </tr>
+          <tr>
+            <td>IIT-R</td>
+            <td>27</td>
+            <td>8,104</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>IIT-G</td>
+            <td>3</td>
+            <td>1984</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>AMRITA</td>
+            <td>32</td>
+            <td>NA</td>
+            <td>NA</td>
+          </tr>
+          <tr>
+            <td>IIT-K</td>
+            <td>11</td>
+            <td>80,351</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>IIT-B</td>
+            <td>28</td>
+            <td>62,706</td>
+            <td>127</td>
+          </tr>
+          <tr>
+            <td>DAYALBAGH</td>
+            <td>5</td>
+            <td>9000</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>IIIT-H</td>
+            <td>10</td>
+            <td>45,547</td>
+            <td>48</td>
+          </tr>
+          <tr>
+            <td>IIT-KGP</td>
+            <td>NA</td>
+            <td>NA</td>
+            <td>NA</td>
+          </tr>
+          <tr>
+            <td>NIT-K</td>
+            <td>23</td>
+            <td>104,528</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>COE, Pune</td>
+            <td>11</td>
+            <td>9,054</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>TOTAL</td>
+            <td>175</td>
+            <td>380,223</td>
+            <td>268</td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+	<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Web Analytics</h2>
 	<h2 class="text-h3-darkblue-bold" style="margin-top: 2px; ">Top 10 Labs</h2>
 	<div>
 	  <div class="navbar-inner">
+
 	    <div id="output"></div>
 	    <h2 class="text-h2-lightblue" id = "click"></h2> <a href="javascript:generateAllLabs()">Click Here to view More Labs</a>
 
@@ -199,7 +290,7 @@
 					<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > REGISTRATION</a></div>
 					<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > LOGIN</a></div> -->
       <!-- <div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Outreach Portal</a></div> -->
-      <div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > VLEAD Blog</a></div>
+      <div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Blog</a></div>
       <div><a href="http://www.sakshat.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > SAKSHAT PORTAL</a></div>
       <div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Nodal Center</a></div>
     </div>
@@ -208,8 +299,8 @@
       <!-- 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FAQ</a></div>
 					<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
 					<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > SAKSHAT PORTAL</a></div> -->
-      <div class="text-h2-lightblue-small"> Contact : <i class="fa fa-envelope-o" style="color: white; font-size: 0.8em;"></i> <a class="text-a-lightgreen" style="text-decoration: underline; font-size: 1.0em;" href="mailto:support@vlab.co.in">support@vlab.co.in</a></div>
-      <div><a href="http://118.102.191.38/feedback/feedback.html" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
+      <div class="text-h2-lightblue-small"> Contact : <i class="fa fa-envelope-o" style="color: white; font-size: 0.8em;"></i> <a class="text-a-lightgreen" style="text-decoration: underline; font-size: 0.9em;" href="mailto:support@vlab.co.in">support@vlab.co.in</a></div>
+      <div><a href="http://feedback.vlabs.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
     </div>
 			
     <div class="col-md-2 border-right-green-dotted" >
