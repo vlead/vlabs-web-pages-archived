@@ -11,7 +11,7 @@
   - To check whether the lab is hosted in AWS url or not
 
 * Pre conditions
-  - Refer to first test case [[https://github.com/Virtual-Labs/vlab-web-pages/blob/master/test-cases/integration_test-cases/IIIT-H/IIIT-H_01_Usability_smk.org][IIIT-H_01_Usability_smk.org]]
+  - Refer to first test case [[https://github.com/vlead/vlab-web-pages/blob/master/test-cases/integration_test-cases/IIIT-H/IIIT-H_01_Usability_smk.org][IIIT-H_01_Usability_smk.org]]
 
 * Post conditions
   - Nil
