@@ -1,0 +1,26 @@
+* Author: Nihanth
+* Date Created: 23 Feb 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5,
+
+* Objective
+  - To view the home page of virtual labs
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/vlab-web-pages/blob/master/test-cases/integration_test-cases/IIIT-H/IIIT-H_01_Usability_smk.org][IIIT-H_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the 'Home' link
+
+* Expected result
+  1. It should redirect to the Home page and home page should be displayed on the screen
+
+* Review/comments
+
+
