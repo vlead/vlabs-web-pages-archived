@@ -1,0 +1,28 @@
+* Author: Nihanth
+* Date Created: 23 Feb 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5,
+
+* Objective
+  - To check whether the lab is hosted in AWS url or not
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/vlab-web-pages/blob/master/test-cases/integration_test-cases/IIIT-H/IIIT-H_01_Usability_smk.org][IIIT-H_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the Structural Dynamics lab link
+  2. Click on the 'Lab' link corresponding to the 'Structural Dynamics lab'
+
+* Expected result
+  1. It should redirect to the lab link of AWS
+  2. Lab page should be displayed on the screen  with AWS URL
+
+* Review/comments
+
+
