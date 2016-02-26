@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome to Virtual Labs - A MHRD Govt of india Initiative">
+    <meta name="author" content="Virtual Labs - A MHRD Govt of india Initiative">
+    
+    <title>Welcome to Virtual Labs - A MHRD Govt of india Initiative</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    
+ 
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="../vendors/owl-carousel/owl.theme.css">
+    
+    <link rel="stylesheet" href="../vendors/font-awesome/css/font-awesome.css">
+
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+    <title>pre-requisites</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/douglascrockford/JSON-js/master/json2.js"></script>
+<script>
+  $(document).ready(function(){
+  $("#table-heading-ece").click(function(){
+  $("#table-data-ece").toggle();
+  });
+  $("#table-heading-cse").click(function(){
+  $("#table-data-cse").toggle();
+  });
+  $("#table-heading-ee").click(function(){
+  $("#table-data-ee").toggle();
+  });
+  $("#table-heading-mech").click(function(){
+  $("#table-data-mech").toggle();
+  });
+  $("#table-heading-chem").click(function(){
+  $("#table-data-chem").toggle();
+  });
+  $("#table-heading-bio").click(function(){
+  $("#table-data-bio").toggle();
+  });
+  $("#table-heading-civil").click(function(){
+  $("#table-data-civil").toggle();
+  });
+  $("#table-heading-phy").click(function(){
+  $("#table-data-phy").toggle();
+  });
+  $("#table-heading-chemsci").click(function(){
+  $("#table-data-chemsci").toggle();
+  });
+
+});
+</script>	
+</head>
+<body id="page-top" class="index" onload="generateTopLabs()">
+  <div id="top">
+    <header>
+	  <!-- Navigation -->
+	  <nav class="navbar navbar-default " style="background-color: white !important; margin-bottom: 0px !important;">
+	    <div class="container">
+	      <!-- Brand and toggle get grouped for better mobile display -->
+	      <div class="navbar-header page-scroll">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar" style="background-color: #77BB41"></span>
+		  <span class="icon-bar" style="background-color: #77BB41"></span>
+		  <span class="icon-bar" style="background-color: #77BB41"></span>
+		</button>
+		<a class="navbar-brand main-logo-a" href="index.html"><img src="../images/logo-new.png" class="img-responsive main-logo" /></a>
+	      </div>			
+			                        
+	      <!-- Collect the nav links, forms, and other content for toggling -->
+	      <div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
+		
+		<ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
+		  <li>
+		    <form method="post">
+		     <!-- <input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB"/>
+		      <input type="submit" value="" class="search-button" />-->
+		    </form>
+		  </li>
+		</ul>
+			                
+		<ul class="nav navbar-nav navbar-right menu-ul">
+		  <li class="page-scroll menu-li " >
+		    <a href="../index.html" class="menu-a" >HOME</a>
+		  </li>
+		  <li class="page-scroll menu-li">
+		    <a href="../labs.html"  class="menu-a" >ALL LABS</a>
+		  </li>
+		  <!-- 			                    <li class="page-scroll menu-li">
+							    <a href="#signin"  class="menu-a" >SIGN IN</a>
+		  </li> -->
+		  <li class="page-scroll menu-li " >
+        <a href="../index.html#partner" class="menu-a" >PARTNERS</a>
+      </li><li class="page-scroll menu-li " >
+      <a href="../index.html#contact" class="menu-a" >CONTACT</a>
+    </li>
+		</ul>
+		
+		
+			                	
+	      </div>
+	      <!-- /.navbar-collapse -->  
+	    </div>
+	    <!-- /.container-fluid -->
+	  </nav>
+    </header>
+    
+    <div id="content">
+      <div class="container" >
+	<div class="row">
+	  <hr style="background:#ff6600 !important;  height: 8px; margin-top: 0px;">
+	</div> <!-- row end -->
+      </div> <!-- container-fluid end for slider -->
+      
+      
+      <!-- =================================================================================================================================== -->
+      <div class="container" >
+      <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Disciplines and Domains</h2>
+      <div style="margin-bottom: 50px;">
+         <table class="table">
+        <thead>
+          <tr>
+            <th id="table-heading-ece" class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Electronics & Communications</th>
+          </tr>
+        </thead >
+        <tbody id="table-data-ece">
+          <tr>
+            <td style="margin-top: 2px;"> <span style="font-weight:bold">Lab</span></td>
+            <td style="margin-top: 2px;"><span style="font-weight:bold">Institute</span></td>
+            <td style="margin-top: 2px;"><span style="font-weight:bold">Client side Dependency</span></td>
+          </tr>
+
+          <tr>
+            <td >Electromagnetic Theory</td>
+            <td>IIIT HYDERABAD</td>
+            <td ><a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.6.0-65)</a>, <a href="installIcedTeaplugin.html" class="text-h2-darkblue" style="margin-top: 2px;">IcedTea 2.5.3</a>, <a href="installJava3D.html" class="text-h2-darkblue" style="margin-top: 2px;">Java 3D (1.5.2)</a> </td>
+          </tr>
+          </tbody>
+          <thead>
+          <tr>
+            <th id="table-heading-cse" class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Computer Science & Engineering</th>
+       </tr>
+        </thead>
+        <tbody id="table-data-cse">
+          <tr>
+            <td style="margin-top: 2px;"> <span style="font-weight:bold">Lab</span></td>
+            <td style="margin-top: 2px;"><span style="font-weight:bold">Institute</span></td>
+            <td style="margin-top: 2px;"><span style="font-weight:bold">Client side Dependency</span></td>
+          </tr>
+
+          <tr>
+            <td >Analog CMOS VLSI Circuit Design</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java</a>, <a href="installIcedTeaplugin.html" class="text-h2-darkblue" style="margin-top: 2px;">IcedTea plugin</a></td>
+          </tr>
+          <tr>
+            <td >Data Structures</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installFlash.html" class="text-h2-darkblue" style="margin-top: 2px;">Adobe Flash Plugin</a></td>
+          </tr>
+          <tr>
+            <td >Computer Programming Lab</td>
+            <td>IIIT HYDERABAD</td>
+            <td>None</td>
+          </tr>
+          <tr>
+            <td >Principles of Programming Languages</td>
+            <td>IIIT HYDERABAD</td>
+            <td>None</td>            
+          </tr>
+          <tr>
+            <td >Data Mining</td>
+            <td>IIIT HYDERABAD</td>
+            <td>None</td>                        
+          </tr>
+          <tr>
+            <td >Linux Lab</td>
+            <td>IIIT HYDERABAD</td>
+            <td>None</td>                        
+          </tr>
+          <tr>
+            <td >Computer Organization</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installIcedTeaplugin.html"
+            class="text-h2-darkblue" style="margin-top: 2px;">IcedTea plugin</a>, <a href="installFlash.html" class="text-h2-darkblue" style="margin-top: 2px;">Adobe Flash Plugin</a></td>
+          </tr>
+          <tr>
+            <td>VLSI</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a></d>
+          </tr>
+          <tr>
+            <td >Digital Logic Design</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installIcedTeaplugin.html"
+            class="text-h2-darkblue" style="margin-top: 2px;">IcedTea plugin</a></td>
+          </tr>
+          <tr>
+            <td >Speech Signal Processing</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installIcedTeaplugin.html"
+            class="text-h2-darkblue" style="margin-top: 2px;">IcedTea plugin</a></td>
+          </tr>
+          <tr>
+            <td >Mobile Robotics</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installIcedTeaplugin.html"
+            class="text-h2-darkblue" style="margin-top: 2px;">IcedTea plugin</a></td>
+          </tr>
+          <tr>
+            <td >Computer Graphics</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installIcedTeaplugin.html"
+            class="text-h2-darkblue" style="margin-top: 2px;">IcedTea plugin</a></td>
+          </tr>
+          <tr>
+            <td >Image Processing</td>
+            <td>IIIT HYDERABAD</td>
+            <td>None</td>                        
+          </tr>
+          <tr>
+            <td >Pattern Recognition</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installIcedTeaplugin.html"
+            class="text-h2-darkblue" style="margin-top: 2px;">IcedTea plugin</a></td>
+          </tr>
+          <tr>
+            <td >Optical Remote Sensing</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installFlash.html" class="text-h2-darkblue" style="margin-top: 2px;">Adobe Flash Plugin</a>, <a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java</a>, <a href="installJava3D.html" class="text-h2-darkblue" style="margin-top: 2px;">Java 3D (1.5.2)</a></td>
+          </tr>
+          <tr>
+            <td >Artificial Neural Networks</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installIcedTeaplugin.html"
+            class="text-h2-darkblue" style="margin-top: 2px;">IcedTea plugin</a></td>
+          </tr>
+          <tr>
+            <td >Computational Linguistics</td>
+            <td>IIIT HYDERABAD</td>
+            <td>None</td>
+          </tr>
+          <tr>
+            <td >Natural Language Processing</td>
+            <td>IIIT HYDERABAD</td>
+            <td>None</td>            
+          </tr>
+          <tr>
+            <td >Cryptography Lab</td>
+            <td>IIIT HYDERABAD</td>
+            <td>None</td>                        
+          </tr>
+          <tr>
+            <td >Databases</td>
+            <td>IIIT HYDERABAD</td>
+            <td>None</td>                                    
+          </tr>
+          <tr>
+            <td >Virtual Advanced VLSI Lab</td>
+            <td>IIIT HYDERABAD</td>
+            <td>None</td>                                                
+          </tr>
+        </tbody>
+<thead> 
+          <tr>
+            <th id="table-heading-civil" class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Civil Engineering</th>
+          </tr>
+        </thead>
+       <tbody id="table-data-civil">
+          <tr>
+            <td style="margin-top: 2px;"> <span style="font-weight:bold">Lab</span></td>
+            <td style="margin-top: 2px;"><span style="font-weight:bold">Institute</span></td>
+            <td style="margin-top: 2px;"><span style="font-weight:bold">Client side Dependency</span></td>
+          </tr>
+
+          <tr>
+            <td >Strength of Materials Lab</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installIcedTeaplugin.html"
+            class="text-h2-darkblue" style="margin-top: 2px;">IcedTea plugin</a> <a href="installJava3D.html" class="text-h2-darkblue" style="margin-top: 2px;">Java 3D (1.5.2), <a href="installFlash.html" class="text-h2-darkblue" style="margin-top: 2px;">Adobe Flash Plugin</a></td>
+          </tr>
+          <tr>
+            <td >Fluid Mechanics Lab</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installIcedTeaplugin.html"
+            class="text-h2-darkblue" style="margin-top: 2px;">IcedTea plugin</a> <a href="installJava3D.html" class="text-h2-darkblue" style="margin-top: 2px;">Java 3D (1.5.2), <a href="installFlash.html" class="text-h2-darkblue" style="margin-top: 2px;">Adobe Flash Plugin</a></td>
+          </tr>
+          <tr>
+            <td >Soil Mechanics Lab</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava3D.html" class="text-h2-darkblue" style="margin-top: 2px;">Java 3D (1.5.2)</a>, <a href="installFlash.html" class="text-h2-darkblue" style="margin-top: 2px;">Adobe Flash Plugin</a>, <a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installIcedTeaplugin.html"
+            class="text-h2-darkblue" style="margin-top: 2px;">IcedTea plugin</a></td>
+          </tr>
+          <tr>
+            <td>Basic Structural Analysis Lab</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava3D.html" class="text-h2-darkblue" style="margin-top: 2px;">Java 3D (1.5.2)</a>, <a href="installFlash.html" class="text-h2-darkblue"
+            style="margin-top: 2px;">Adobe Flash Plugin</a>, <a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installIcedTeaplugin.html"
+            class="text-h2-darkblue" style="margin-top: 2px;">IcedTea plugin</a></td>
+          </tr>
+          <tr>
+            <td>Geotechnical Engineering</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installFlash.html" class="text-h2-darkblue" style="margin-top: 2px;">Adobe Flash Plugin</a>, <a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installIcedTeaplugin.html"
+            class="text-h2-darkblue" style="margin-top: 2px;">IcedTea
+            plugin</a>, <a href="installJava3D.html" class="text-h2-darkblue" style="margin-top: 2px;">Java 3D (1.5.2)</td>
+          </tr>
+</tbody>
+<thead>
+          <tr>
+            <th id="table-heading-phy" class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Physical Sciences</th>
+          </tr>
+</thead>
+        <tbody id="table-data-phy">
+          <tr>
+            <td style="margin-top: 2px;"> <span style="font-weight:bold">Lab</span></td>
+            <td style="margin-top: 2px;"><span style="font-weight:bold">Institute</span></td>
+            <td style="margin-top: 2px;"><span style="font-weight:bold">Client side Dependency</span></td>
+          </tr>
+
+          <tr>
+            <td >Physical Sciences Laboratory</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installJava3D.html" class="text-h2-darkblue" style="margin-top: 2px;">Java 3D (1.5.2), <a href="installFlash.html" class="text-h2-darkblue" style="margin-top: 2px;">Adobe Flash Plugin</a></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th id="table-heading-chemsci" class = "text-h3-darkblue-bold">Chemical Sciences</th>
+          </tr>
+        </thead>
+        <tbody id="table-data-chemsci">
+          <tr>
+            <td style="margin-top: 2px;"> <span style="font-weight:bold">Lab</span></td>
+            <td style="margin-top: 2px;"><span style="font-weight:bold">Institute</span></td>
+            <td style="margin-top: 2px;"><span style="font-weight:bold">Client side Dependency</span></td>
+          </tr>
+
+          <tr>
+            <td>Colloid and Surface Chemistry</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installFlash.html" class="text-h2-darkblue" style="margin-top: 2px;">Adobe Flash Plugin</a></td>
+          </tr>
+          <tr>
+            <td>Molecular Absorption Spectroscopy</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installFlash.html" class="text-h2-darkblue" style="margin-top: 2px;">Adobe Flash Plugin</a></td>
+          </tr>
+          <tr>
+            <td>Circular Dichroism Spectroscopy</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installFlash.html" class="text-h2-darkblue" style="margin-top: 2px;">Adobe Flash Plugin</a></td>
+          </tr>
+          <tr>
+            <td>Molecular Interactions</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava3D.html" class="text-h2-darkblue" style="margin-top: 2px;">Java 3D (1.5.2),  <a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installIcedTeaplugin.html"
+            class="text-h2-darkblue" style="margin-top: 2px;">IcedTea plugin</a></td>
+          </tr>
+          <tr>
+            <td>Physical Chemistry Virtual Lab </td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installJava3D.html" class="text-h2-darkblue" style="margin-top: 2px;">Java 3D (1.5.2), <a href="installFlash.html" class="text-h2-darkblue" style="margin-top: 2px;">Adobe Flash Plugin</a></td>
+          </tr>
+          <tr>
+            <td>Molecular Florescence Spectroscopy</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installFlash.html" class="text-h2-darkblue" style="margin-top: 2px;">Adobe Flash Plugin</a></td>
+          </tr>
+          <tr>
+            <td>Quantum Chemistry</td>
+            <td>IIIT HYDERABAD</td>
+            <td><a href="installJava.html" class="text-h2-darkblue" style="margin-top: 2px;">Java(1.7.0-65)</a>, <a href="installIcedTeaplugin.html"
+            class="text-h2-darkblue" style="margin-top: 2px;">IcedTea plugin</a></td>
+          </tr>
+
+        </tbody>
+        <thead>
+          <tr>
+            <th id="table-heading-ee" class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Electrical Engineering</th>
+          </tr>
+        </thead>
+        <!--<tbody id="table-data-ee">
+         <tr>
+            <td >Problem Solving</td>
+          </tr>
+        </tbody>-->
+        <thead>
+          <tr>
+            <th id="table-heading-mech" class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Mechanical Engineering</th>
+          </tr>
+        </thead>
+       <!-- <tbody id="table-data-mech">
+          <tr>
+            <td >Problem Solving</td>
+          </tr>
+          </tbody>-->
+        <thead>
+        <tr>
+            <th id="table-heading-chem" class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Chemical Engineering</th>
+          </tr>
+        </thead>
+       <!-- <tbody id="table-data-chem">
+          <tr>
+            <td >Problem Solving</td>
+          </tr>
+          </tbody>-->
+<thead>
+        <tr>
+            <th id="table-heading-bio" class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Biotechnology & Biomedical Engineering</th>
+          </tr>
+          </thead>
+          <thead>
+       <!-- <tbody id="table-data-bio">
+          <tr>
+            <td >Problem Solving</td>
+          </tr>
+</tbody>-->
+</table>      
+      </div>
+    </div>
+  </div>
+  <!-- =================================================================================================================================== -->
+
+	</div> <!-- content div -->
+
+	<footer>
+		<div class="container-fluid footer-div" style="background: #404040; margin-top: 40px;  padding: 20px;">
+			<div class="col-md-4 border-right-green-dotted" >
+				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;">Updates</h2>
+				<a href="http://community.virtual-labs.ac.in/w/index.php/Download" class="text-normal-gray-small nounderline" style="color: white" > Lab Integration Kit Releases</a>
+				<a href="http://community.virtual-labs.ac.in/w/index.php/Integration_Engineers_%28IEs%29_Workshop:_A_Report"
+				class="text-normal-gray-small nounderline"
+				style="color: white" >First Integration Workshop at IIIT Hyderabad</a>
+				<a href="http://community.virtual-labs.ac.in/w/index.php/Summer_Sprint_Integration_workshop" class="text-normal-gray-small nounderline" style="color: white" > Summer Integration Workshop at IIT Guwahati</a>
+				<a href="http://community.virtual-labs.ac.in/w/index.php/QA/Integration_workshop"
+				class="text-normal-gray-small nounderline"
+				style="color: white" > QA Integration
+				Workshop at IIIT Hyderabad</a>
+				<a href="http://community.virtual-labs.ac.in/w/index.php/A_new_set_of_25_Virtual_Labs_on_Portable_Media" class="text-normal-gray-small nounderline" style="color: white" > A new set of 25 Virtual Labs on Portable Media</a>
+			</div>
+
+			<div class="col-md-2 border-right-green-dotted" >
+<!-- 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;">Nodal Centers</h2>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > REGISTRATION</a></div>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > LOGIN</a></div> -->
+				<!-- <div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Outreach Portal</a></div> -->
+				<a href="http://community.virtual-labs.ac.in/w/index.php/Main_Page" class="text-a-lightgreen" style="text-decoration: underline;" >Community</a>
+				<a href="http://www.sakshat.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Sakshat Portal</a>
+				<a href="http://118.102.191.38/feedback/Registration.html" class="text-a-lightgreen" style="text-decoration: underline;" > Nodal Center</a>
+				<a href="http://outreach.vlabs.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Outreach Portal</a>
+			</div>
+
+			<div class="col-md-3 border-right-green-dotted" id="contact" >
+<!-- 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FAQ</a></div>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > SAKSHAT PORTAL</a></div> -->
+				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;"> Contact us</h2>
+				<a href="http://feedback.vlabs.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Feedback</a>
+				<a class="text-a-lightgreen" style="text-decoration: underline;" href="mailto:support@vlabs.ac.in">support@vlabs.ac.in</a>
+			</div>
+
+			<div class="col-md-2 border-right-green-dotted" >
+				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;"> Follow us</h2>
+				<a href="https://www.facebook.com/pages/Virtual-Labs-IIT-Delhi/301510159983871" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/fb.png"  style="border-radius: 50%;"/> </a>
+				<a href="https://twitter.com/TheVirtualLabs" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/twitter.png"  style="border-radius: 50%;"/></a>
+				<a href="http://linkedin.com" class="text-a-lightgreen nounderline"  target="_blank" > <img src="images/social/linkedin.png" style="border-radius: 50%;" /></a>
+
+			</div>
+
+ 		</div>
+	</footer>
+
+</div> <!-- top div -->
+
+</body>
+
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+    
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.js"></script>
+    
+<!-- Include js plugin -->
+<script src="vendors/owl-carousel/owl.carousel.js"></script>
+	
+<script type="text/javascript">
+  $(document).ready(function() {
+		 
+  var owl = $("#owl-demo");
+  owl.owlCarousel({
+  navigation: true,
+  navigationText: [
+  "<img src='../images/left-arrow.png'>",
+  "<img src='../images/right-arrow.png'>"
+  ],
+  /* autoPlay : 3000,
+  stopOnHover : true */
+  });
+  
+  //owl for partner institutions
+  var owl = $("#owl-partner-institutions");
+  owl.owlCarousel({
+  navigation: true,
+  navigationText: [
+  "<img src='../images/left-arrow.png'>",
+  "<img src='../images/right-arrow.png'>"
+  ],
+  autoPlay : 3000,
+  stopOnHover : true,
+  items : 8,
+  });
+  //owl for aboutus
+  var owl = $("#owl-aboutus");
+  owl.owlCarousel({
+  navigation: true,
+  singleItem:true
+  });
+  
+  });
+</script>
+<script>
+$(document).ready(function(){
+    $("#button").click(function(){
+        $("td").toggle();
+    });
+});
+</script>
+</html>
