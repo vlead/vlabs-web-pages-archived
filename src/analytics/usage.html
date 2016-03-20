@@ -65,7 +65,7 @@
   $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
   var sorted_data = _.sortBy(data, 'usage');
   var reverse_data = sorted_data.reverse();
-  var slice_data = reverse_data.slice(0,9)
+  var slice_data = reverse_data.slice(0,10)
   var data = { target: slice_data };
   
   var template = _.template( $("#tpl-html").text() );
@@ -79,7 +79,10 @@
   $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
   var sorted_data = _.sortBy(data, 'usage');
   var reverse_data = sorted_data.reverse();
-  var all_data = { target:reverse_data };
+  var slice_data = reverse_data.slice(0,10)
+  var remaining_data = _.difference(reverse_data, slice_data);
+  var all_data = { target:remaining_data };
+
   
   var template = _.template( $("#tpl-html").text() );
   $("#output1").html( template(all_data) );
@@ -251,8 +254,6 @@
 
 	    <div id="output"></div>
 	    <h2 class="text-h2-lightblue" id = "click"></h2> <a href="javascript:generateAllLabs()">Click Here to view More Labs</a>
-
-	
 
 	  </div>
 	</div>
