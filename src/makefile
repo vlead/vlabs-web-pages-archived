@@ -1,4 +1,4 @@
-BUILD=../build/*
+BUILD=../build/
 DEST_HOST="root@10.4.12.24"
 #DEST_HOST_STAGE="root@10.4.12.24"
 DEST_DIR="/vz/private/215/var/www"
