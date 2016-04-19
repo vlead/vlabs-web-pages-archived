@@ -51,9 +51,7 @@
   $.each(jd, function(i, field){
   if (jd[i]['institute_name']==$("#table-heading-iiith").text()){
   var eachrow = "<tr>"
-        + "<td align='center'>" + jd[i]['s_no'] + "</td>"
-        + "<td align='left'>" + jd[i]['lab_name'] + "</td>"
-        + "<td align='left'>" + jd[i]['institute_name'] + "</td>"
+        + "<td align='left'><a href=" + jd[i]['git_url'] + ">" + jd[i]['lab_name'] +"</a></td>"
         + "<td align='center'>" + jd[i]['total_no_of_test_cases'] + "</td>"
         + "<td align='center'>" + jd[i]['total_no_of_defects'] + "</td>"
         + "<td align='center'>" + jd[i]['S1'] + "</td>"
@@ -70,12 +68,11 @@
   
   $("#table-heading-iitd").click(function(){
   $.getJSON('qa-data.json', function(jd) {
+
   $.each(jd, function(i, field){
   if (jd[i]['institute_name']==$("#table-heading-iitd").text()){
   var eachrow = "<tr>"
-        + "<td align='center'>" + jd[i]['s_no'] + "</td>"
-        + "<td align='left'>" + jd[i]['lab_name'] + "</td>"
-        + "<td align='left'>" + jd[i]['institute_name'] + "</td>"
+        + "<td align='left'><a href=" + jd[i]['git_url'] + ">" + jd[i]['lab_name'] +"</a></td>"
         + "<td align='center'>" + jd[i]['total_no_of_test_cases'] + "</td>"
         + "<td align='center'>" + jd[i]['total_no_of_defects'] + "</td>"
         + "<td align='center'>" + jd[i]['S1'] + "</td>"
@@ -94,9 +91,7 @@
   $.each(jd, function(i, field){
   if (jd[i]['institute_name']==$("#table-heading-iitb").text()){
   var eachrow = "<tr>"
-        + "<td align='center'>" + jd[i]['s_no'] + "</td>"
-        + "<td align='left'>" + jd[i]['lab_name'] + "</td>"
-        + "<td align='left'>" + jd[i]['institute_name'] + "</td>"
+        + "<td align='left'><a href=" + jd[i]['git_url'] + ">" + jd[i]['lab_name'] +"</a></td>"
         + "<td align='center'>" + jd[i]['total_no_of_test_cases'] + "</td>"
         + "<td align='center'>" + jd[i]['total_no_of_defects'] + "</td>"
         + "<td align='center'>" + jd[i]['S1'] + "</td>"
@@ -115,9 +110,7 @@
   $.each(jd, function(i, field){
   if (jd[i]['institute_name']==$("#table-heading-iitk").text()){
   var eachrow = "<tr>"
-        + "<td align='center'>" + jd[i]['s_no'] + "</td>"
-        + "<td align='left'>" + jd[i]['lab_name'] + "</td>"
-        + "<td align='left'>" + jd[i]['institute_name'] + "</td>"
+        + "<td align='left'><a href=" + jd[i]['git_url'] + ">" + jd[i]['lab_name'] +"</a></td>"
         + "<td align='center'>" + jd[i]['total_no_of_test_cases'] + "</td>"
         + "<td align='center'>" + jd[i]['total_no_of_defects'] + "</td>"
         + "<td align='center'>" + jd[i]['S1'] + "</td>"
@@ -129,16 +122,14 @@
   });
   });			
 
-  $("#table-data-iitkgp").toggle();
+  $("#table-data-iitk").toggle();
   });
   $("#table-heading-iitkgp").click(function(){
   $.getJSON('qa-data.json', function(jd) {
   $.each(jd, function(i, field){
   if (jd[i]['institute_name']==$("#table-heading-iitkgp").text()){
   var eachrow = "<tr>"
-        + "<td align='center'>" + jd[i]['s_no'] + "</td>"
-        + "<td align='left'>" + jd[i]['lab_name'] + "</td>"
-        + "<td align='left'>" + jd[i]['institute_name'] + "</td>"
+        + "<td align='left'><a href=" + jd[i]['git_url'] + ">" + jd[i]['lab_name'] +"</a></td>"
         + "<td align='center'>" + jd[i]['total_no_of_test_cases'] + "</td>"
         + "<td align='center'>" + jd[i]['total_no_of_defects'] + "</td>"
         + "<td align='center'>" + jd[i]['S1'] + "</td>"
@@ -157,9 +148,7 @@
   $.each(jd, function(i, field){
   if (jd[i]['institute_name']==$("#table-heading-iitm").text()){
   var eachrow = "<tr>"
-        + "<td align='center'>" + jd[i]['s_no'] + "</td>"
-        + "<td align='left'>" + jd[i]['lab_name'] + "</td>"
-        + "<td align='left'>" + jd[i]['institute_name'] + "</td>"
+        + "<td align='left'><a href=" + jd[i]['git_url'] + ">" + jd[i]['lab_name'] +"</a></td>"
         + "<td align='center'>" + jd[i]['total_no_of_test_cases'] + "</td>"
         + "<td align='center'>" + jd[i]['total_no_of_defects'] + "</td>"
         + "<td align='center'>" + jd[i]['S1'] + "</td>"
@@ -171,16 +160,14 @@
   });
   });			
 
-  $("#table-data-iitr").toggle();
+  $("#table-data-iitm").toggle();
   });
-  $("#table-heading-iitm").click(function(){
+  $("#table-heading-iitr").click(function(){
   $.getJSON('qa-data.json', function(jd) {
   $.each(jd, function(i, field){
   if (jd[i]['institute_name']==$("#table-heading-iitr").text()){
   var eachrow = "<tr>"
-        + "<td align='center'>" + jd[i]['s_no'] + "</td>"
-        + "<td align='left'>" + jd[i]['lab_name'] + "</td>"
-        + "<td align='left'>" + jd[i]['institute_name'] + "</td>"
+        + "<td align='left'><a href=" + jd[i]['git_url'] + ">" + jd[i]['lab_name'] +"</a></td>"
         + "<td align='center'>" + jd[i]['total_no_of_test_cases'] + "</td>"
         + "<td align='center'>" + jd[i]['total_no_of_defects'] + "</td>"
         + "<td align='center'>" + jd[i]['S1'] + "</td>"
@@ -199,9 +186,7 @@
   $.each(jd, function(i, field){
   if (jd[i]['institute_name']==$("#table-heading-iitg").text()){
   var eachrow = "<tr>"
-        + "<td align='center'>" + jd[i]['s_no'] + "</td>"
-        + "<td align='left'>" + jd[i]['lab_name'] + "</td>"
-        + "<td align='left'>" + jd[i]['institute_name'] + "</td>"
+        + "<td align='left'><a href=" + jd[i]['git_url'] + ">" + jd[i]['lab_name'] +"</a></td>"
         + "<td align='center'>" + jd[i]['total_no_of_test_cases'] + "</td>"
         + "<td align='center'>" + jd[i]['total_no_of_defects'] + "</td>"
         + "<td align='center'>" + jd[i]['S1'] + "</td>"
@@ -220,9 +205,7 @@
   $.each(jd, function(i, field){
   if (jd[i]['institute_name']==$("#table-heading-amrita").text()){
   var eachrow = "<tr>"
-        + "<td align='center'>" + jd[i]['s_no'] + "</td>"
-        + "<td align='left'>" + jd[i]['lab_name'] + "</td>"
-        + "<td align='left'>" + jd[i]['institute_name'] + "</td>"
+        + "<td align='left'><a href=" + jd[i]['git_url'] + ">" + jd[i]['lab_name'] +"</a></td>"
         + "<td align='center'>" + jd[i]['total_no_of_test_cases'] + "</td>"
         + "<td align='center'>" + jd[i]['total_no_of_defects'] + "</td>"
         + "<td align='center'>" + jd[i]['S1'] + "</td>"
@@ -241,9 +224,7 @@
   $.each(jd, function(i, field){
   if (jd[i]['institute_name']==$("#table-heading-dei").text()){
   var eachrow = "<tr>"
-        + "<td align='center'>" + jd[i]['s_no'] + "</td>"
-        + "<td align='left'>" + jd[i]['lab_name'] + "</td>"
-        + "<td align='left'>" + jd[i]['institute_name'] + "</td>"
+        + "<td align='left'><a href=" + jd[i]['git_url'] + ">" + jd[i]['lab_name'] +"</a></td>"
         + "<td align='center'>" + jd[i]['total_no_of_test_cases'] + "</td>"
         + "<td align='center'>" + jd[i]['total_no_of_defects'] + "</td>"
         + "<td align='center'>" + jd[i]['S1'] + "</td>"
@@ -262,9 +243,7 @@
   $.each(jd, function(i, field){
   if (jd[i]['institute_name']==$("#table-heading-nitk").text()){
   var eachrow = "<tr>"
-        + "<td align='center'>" + jd[i]['s_no'] + "</td>"
-        + "<td align='left'>" + jd[i]['lab_name'] + "</td>"
-        + "<td align='left'>" + jd[i]['institute_name'] + "</td>"
+        + "<td align='left'><a href=" + jd[i]['git_url'] + ">" + jd[i]['lab_name'] +"</a></td>"
         + "<td align='center'>" + jd[i]['total_no_of_test_cases'] + "</td>"
         + "<td align='center'>" + jd[i]['total_no_of_defects'] + "</td>"
         + "<td align='center'>" + jd[i]['S1'] + "</td>"
@@ -283,9 +262,7 @@
   $.each(jd, function(i, field){
   if (jd[i]['institute_name']==$("#table-heading-coep").text()){
   var eachrow = "<tr>"
-        + "<td align='center'>" + jd[i]['s_no'] + "</td>"
-        + "<td align='left'>" + jd[i]['lab_name'] + "</td>"
-        + "<td align='left'>" + jd[i]['institute_name'] + "</td>"
+        + "<td align='left'><a href=" + jd[i]['git_url'] + ">" + jd[i]['lab_name'] +"</a></td>"
         + "<td align='center'>" + jd[i]['total_no_of_test_cases'] + "</td>"
         + "<td align='center'>" + jd[i]['total_no_of_defects'] + "</td>"
         + "<td align='center'>" + jd[i]['S1'] + "</td>"
@@ -409,7 +386,7 @@
           </tr>
          </tbody>
           <tr>
-            <th id="table-heading-iitb" class = "text-h3-darkblue-bold" style="margin-top: 2px;cursor: pointer"> IIT Bombay</th>
+            <th id="table-heading-iitb" class = "text-h3-darkblue-bold" style="margin-top: 2px;cursor: pointer">IIT Bombay</th>
           </tr>
        <tbody id="table-data-iitb">
           <tr>
@@ -422,8 +399,7 @@
           </tr>
         </tbody>
           <tr>
-            <th id="table-heading-iitk" class = "text-h3-darkblue-bold" style=
-            "margin-top: 2px;cursor: pointer">IIT Kanpur</th>
+            <th id="table-heading-iitk" class = "text-h3-darkblue-bold" style="margin-top: 2px;cursor: pointer">IIT Kanpur</th>
           </tr>
         <tbody id="table-data-iitk">
          <tr>
@@ -436,8 +412,7 @@
           </tr>
         </tbody>
           <tr>
-            <th id="table-heading-iitkgp" class = "text-h3-darkblue-bold" style=
-            "margin-top: 2px;cursor: pointer">IIT Kharagpur</th>
+            <th id="table-heading-iitkgp" class = "text-h3-darkblue-bold" style="margin-top: 2px;cursor: pointer">IIT Kharagpur</th>
           </tr>
         <tbody id="table-data-iitkgp">
           <tr>
@@ -451,7 +426,7 @@
           </tr>
           </tbody>
         <tr>
-            <th id="table-heading-chem" class = "text-h3-darkblue-bold" style=
+            <th id="table-heading-iitm" class = "text-h3-darkblue-bold" style=
             "margin-top: 2px;cursor: pointer">IIT Madras</th>
           </tr>
         <tbody id="table-data-iitm">
@@ -466,7 +441,7 @@
           </tr>
           </tbody>
         <tr>
-            <th id="table-heading-bio" class = "text-h3-darkblue-bold" style=
+            <th id="table-heading-iitr" class = "text-h3-darkblue-bold" style=
             "margin-top: 2px;cursor: pointer">IIT Roorkee</th>
           </tr>
 
