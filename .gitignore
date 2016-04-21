@@ -1,0 +1,7 @@
+*.swp
+*~
+*#*
+build/
+*git-ignore/
+sitemap.org
+sitemap.html
