@@ -40,10 +40,10 @@
 	  <% _.each( target, function(i) {%>
 	  <% if ((i.lab_name !== "None") && (i.usage > 100)) { %>
           <tr>
-	    <td><%= i.lab_name %></td>
-            <td><%= i.hits %></td>
-            <td><%= i.visits %></td>
-            <td><%= i.usage %></td>
+	    <td><%= (i.lab_name).toLocaleString() %></td>
+            <td><%= (i.hits).toLocaleString() %></td>
+            <td><%= (i.visits).toLocaleString() %></td>
+            <td><%= (i.usage).toLocaleString() %></td>
           </tr>
 	  <% } %>    
           <% }); %>
@@ -65,9 +65,9 @@
         <tbody>
           <tr>
             <td>Total Web Analytics</td>
-            <td><%= target.hits %></td>
-            <td><%= target.visits %></td>
-            <td><%= target.usage %></td>
+            <td><%= (target.hits).toLocaleString() %></td>
+            <td><%= (target.visits).toLocaleString() %></td>
+            <td><%= (target.usage).toLocaleString() %></td>
           </tr>          
         </tbody>
       </table>
@@ -208,7 +208,7 @@
             <td>TOTAL</td>
             <td>296</td>
             <td>501</td>            
-            <td>712,743</td>
+            <td>7,12,743</td>
           </tr>
         </tbody>
         </table>
@@ -231,7 +231,7 @@
             <td>IIT-D</td>
             <td>70</td>
             <td>73</td>
-            <td>115,303</td>            
+            <td>1,15,303</td>            
           </tr>
           <tr>
             <td>IIT-R</td>
@@ -249,7 +249,7 @@
             <td>AMRITA</td>
             <td>82</td>
             <td>80</td>            
-            <td>201,117</td>
+            <td>2,01,117</td>
           </tr>
           <tr>
             <td>IIT-K</td>
@@ -267,7 +267,7 @@
             <td>DAYALBAGH</td>
             <td>5</td>
             <td>18</td>            
-            <td>9000</td>
+            <td>9,000</td>
           </tr>
           <tr>
             <td>IIIT-H</td>
@@ -285,7 +285,7 @@
             <td>NIT-K</td>
             <td>14</td>
             <td>21</td>            
-            <td>122,859</td>
+            <td>1,22,859</td>
           </tr>
           <tr>
             <td>COE, Pune</td>
