@@ -26,8 +26,6 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
     <script type="text/javascript" src="https://raw.github.com/douglascrockford/JSON-js/master/json2.js"></script>
-    
- 
     <script type="text/template" id="tpl-html">
       <table class="table">
         <thead>
@@ -58,16 +56,15 @@
       <table class="table">
         <thead>
           <tr>
-            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Total
-            Hits</th>
-            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Total
-            Visits</th>
-            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Total
-            Usage</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Analytics</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Hits</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Visits</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Usage</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td>Total Web Analytics</td>
             <td><%= target.hits %></td>
             <td><%= target.visits %></td>
             <td><%= target.usage %></td>
@@ -102,7 +99,13 @@
   $("a").removeClass("btn-warning");
   $("#html").addClass("btn-warning");
   
-  });          
+  });
+  var date = new Date();
+  var dateString = (date.getDate() + '/'
+    + ('0' + (date.getMonth() + 1)).slice(-2)
+    + '/' + ('0' + (date.getFullYear())).slice(1));
+  document.getElementById("date").innerHTML = "Web Analytics as on "+dateString;
+
   }
   function generateAllLabs() {
   $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
@@ -121,7 +124,7 @@
   });        
   }
 </script>
-	
+
 </head>
 <body id="page-top" class="index" onload="generateTopLabs()">
   <div id="top">
@@ -177,7 +180,7 @@
     </header>
     
     <div id="content">
-      <div class="container" >
+      <div class="container">
 	<div class="row">
 	  <hr style="background:#ff6600 !important;  height: 8px; margin-top: 0px;">
 	</div> <!-- row end -->
@@ -186,95 +189,115 @@
       
       <!-- =================================================================================================================================== -->
       <div class="container" >
-      <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Workshop Analytics</h2>
+      <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top:
+      30px; ">Workshop Analytics as on 20/10/2016</h2>
+      <div style="margin-bottom: 50px;">
+        <table class="table">
+        <thead>
+          <tr>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">Analytics</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">No. of Nodal centers</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">No. of Workshops</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">Workshop Usage</th>
+
+          </tr>
+        </thead>
+        <tbody>
+            <td>TOTAL</td>
+            <td>296</td>
+            <td>501</td>            
+            <td>712,743</td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+
       <div style="margin-bottom: 50px;">
         <table class="table">
         <thead>
           <tr>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Institute</th>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">No. of Nodal centers</th>
-            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Usages of Virtual Labs</th>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">No. of Workshops</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">Workshop Usage</th>
+
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>IIT-D</td>
             <td>70</td>
-            <td>115,303</td>
             <td>73</td>
+            <td>115,303</td>            
           </tr>
           <tr>
             <td>IIT-R</td>
             <td>35</td>
+            <td>30</td>            
             <td>27,920</td>
-            <td>30</td>
           </tr>
           <tr>
             <td>IIT-G</td>
             <td>18</td>
+            <td>10</td>            
             <td>37,476</td>
-            <td>10</td>
           </tr>
           <tr>
             <td>AMRITA</td>
             <td>82</td>
+            <td>80</td>            
             <td>201,117</td>
-            <td>80</td>
           </tr>
           <tr>
             <td>IIT-K</td>
             <td>19</td>
+            <td>13</td>            
             <td>28,114</td>
-            <td>13</td>
           </tr>
           <tr>
             <td>IIT-B</td>
             <td>28</td>
+            <td>127</td>            
             <td>62,706</td>
-            <td>127</td>
           </tr>
           <tr>
             <td>DAYALBAGH</td>
             <td>5</td>
+            <td>18</td>            
             <td>9000</td>
-            <td>18</td>
           </tr>
           <tr>
             <td>IIIT-H</td>
             <td>3</td>
+            <td>42</td>            
             <td>51,367</td>
-            <td>42</td>
           </tr>
           <tr>
             <td>IIT-KGP</td>
             <td>8</td>
+            <td>36</td>            
             <td>38,724</td>
-            <td>36</td>
           </tr>
           <tr>
             <td>NIT-K</td>
             <td>14</td>
+            <td>21</td>            
             <td>122,859</td>
-            <td>21</td>
           </tr>
           <tr>
             <td>COE, Pune</td>
             <td>20</td>
+            <td>54</td>            
             <td>56,113</td>
-            <td>54</td>
-          </tr>
-          <tr>
-            <td>TOTAL</td>
-            <td>296</td>
-            <td>712,743</td>
-            <td>501</td>
           </tr>
         </tbody>
         </table>
       </div>
-	<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top:
-	30px; ">Web Analytics</h2>
+	<h2 class="text-h2-lightblue" id="date" style=" margin-bottom: 20px; margin-top:
+	30px; "></h2>
 
 	<div>
 	  <div class="navbar-inner">
