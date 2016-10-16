@@ -74,6 +74,31 @@
       <div id="output2"></div>
       
     </script>
+    <script type="text/template" id="tpl-html2">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Analytics</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">No. of Nodal Centers</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">No. of Workshops</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">Workshop Usage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Total</td>
+            <td><%= (target.nodal_centres).toLocaleString() %></td>
+            <td><%= (target.workshops).toLocaleString() %></td>
+            <td><%= (target.usage).toLocaleString() %></td>
+          </tr>          
+        </tbody>
+      </table>
+      <div id="output3"></div>
+      
+    </script>
     
 </script>   
 <script>
@@ -100,6 +125,16 @@
   $("#html").addClass("btn-warning");
   
   });
+  $.getJSON('http://stats.vlabs.ac.in/analytics', function(data) {
+  var data = { target: {'nodal_centres': 13232, 'workshops': 224324, 'usage': 124234} };
+  
+  var template = _.template( $("#tpl-html2").text() );
+  $("#output3").html( template(data) );
+  $("a").removeClass("btn-warning");
+  $("#html").addClass("btn-warning");
+  
+  });
+
   var date = new Date();
   var dateString = (date.getDate() + '/'
     + ('0' + (date.getMonth() + 1)).slice(-2)
@@ -191,28 +226,7 @@
       <div class="container" >
       <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top:
       30px; ">Workshop Analytics as on 20/10/2016</h2>
-      <div style="margin-bottom: 50px;">
-        <table class="table">
-        <thead>
-          <tr>
-            <th class = "text-h3-darkblue-bold" style= "margin-top:
-            2px;">Analytics</th>
-            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">No. of Nodal centers</th>
-            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">No. of Workshops</th>
-            <th class = "text-h3-darkblue-bold" style= "margin-top:
-            2px;">Workshop Usage</th>
-
-          </tr>
-        </thead>
-        <tbody>
-            <td>TOTAL</td>
-            <td>296</td>
-            <td>501</td>            
-            <td>7,12,743</td>
-          </tr>
-        </tbody>
-        </table>
-      </div>
+      <div id="output3"></div>
 
       <div style="margin-bottom: 50px;">
         <table class="table">
@@ -302,6 +316,7 @@
 	<div>
 	  <div class="navbar-inner">
             <div id="output2"></div>
+
 	    <h2 class="text-h3-darkblue-bold" style="margin-top: 2px; ">Top 10 Labs</h2>
 	    <div id="output"></div>
 	    <h2 class="text-h2-lightblue" id = "click"></h2> <a href="javascript:generateAllLabs()">Click Here to view More Labs</a>
