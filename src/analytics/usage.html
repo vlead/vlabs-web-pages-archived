@@ -93,7 +93,7 @@
             <td><%= (target.nodal_centres).toLocaleString() %></td>
             <td><%= (target.workshops).toLocaleString() %></td>
             <td><%= (target.usage).toLocaleString() %></td>
-          </tr>          
+            </tr>          
         </tbody>
       </table>
       <div id="output3"></div>
@@ -104,7 +104,7 @@
 <script>
          
   function generateTopLabs() {
-  $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
+  var jqxhr = $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
   var sorted_data = _.sortBy(data, 'usage');
   var reverse_data = sorted_data.reverse();
   var slice_data = reverse_data.slice(0,10)
@@ -115,26 +115,37 @@
   $("a").removeClass("btn-warning");
   $("#html").addClass("btn-warning");
   
-  });
-  $.getJSON('http://stats.vlabs.ac.in/analytics', function(data) {
+  })
+  .error(function(jqxhr, textStatus, errorThrown) {
+        console.log("error " + textStatus);
+        console.log("incoming Text " + jqxhr.responseText);
+   });
+  
+  var jqxhr = $.getJSON('http://stats.vlabs.ac.in/analytics', function(data) {
   var data = { target: data };
   
   var template = _.template( $("#tpl-html1").text() );
   $("#output2").html( template(data) );
   $("a").removeClass("btn-warning");
-  $("#html").addClass("btn-warning");
-  
-  });
-  $.getJSON('http://stats.vlabs.ac.in/analytics', function(data) {
-  var data = { target: {'nodal_centres': 13232, 'workshops': 224324, 'usage': 124234} };
-  
+  $("#html").addClass("btn-warning");  
+  })
+  .error(function(jqxhr, textStatus, errorThrown) {
+        console.log("error " + textStatus);
+        console.log("incoming Text " + jqxhr.responseText);
+    });
+
+
+  var jqxhr = $.getJSON('http://outreach-map.base4.vlabs.ac.in/get_outreach_analytics', function(data) {
+  var data = { target: data };
   var template = _.template( $("#tpl-html2").text() );
   $("#output3").html( template(data) );
   $("a").removeClass("btn-warning");
   $("#html").addClass("btn-warning");
-  
-  });
-
+  })
+  .error(function(jqxhr, textStatus, errorThrown) {
+        console.log("error " + textStatus);
+        console.log("incoming Text " + jqxhr.responseText);
+    });
   var date = new Date();
   var dateString = (date.getDate() + '/'
     + ('0' + (date.getMonth() + 1)).slice(-2)
@@ -143,20 +154,24 @@
 
   }
   function generateAllLabs() {
-  $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
+  var jqxhr = $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
   var sorted_data = _.sortBy(data, 'usage');
   var reverse_data = sorted_data.reverse();
   var slice_data = reverse_data.slice(0,10)
   var remaining_data = _.difference(reverse_data, slice_data);
   var all_data = { target:remaining_data };
 
-  
   var template = _.template( $("#tpl-html").text() );
   $("#output1").html( template(all_data) );
   $("a").removeClass("btn-warning");
   $("#html").addClass("btn-warning");
 	    
-  });        
+  })
+  .error(function(jqxhr, textStatus, errorThrown) {
+        console.log("error " + textStatus);
+        console.log("incoming Text " + jqxhr.responseText);
+    });
+  
   }
 </script>
 
