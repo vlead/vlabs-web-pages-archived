@@ -191,7 +191,7 @@
     + ('0' + (date.getMonth() + 1)).slice(-2)
     + '/' + ('0' + (date.getFullYear())).slice(1));
   document.getElementById("date").innerHTML = "Web Analytics as on "+dateString;
-
+  document.getElementById("date1").innerHTML = "Workshop Analytics as on "+dateString;
   }
   function generateAllLabs() {
   var jqxhr = $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
@@ -279,8 +279,11 @@
       
       <!-- =================================================================================================================================== -->
       <div class="container" >
-      <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top:
-      30px; ">Workshop Analytics as on 20/10/2016</h2>
+	<h2 class="text-h2-lightblue" id="date1" style=" margin-bottom: 20px; margin-top:
+	30px; "></h2>
+        
+    <!--  <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top:
+      30px; ">Workshop Analytics as on 20/10/2016</h2>-->
       <div id="output3"></div>
 
      <!-- <div style="margin-bottom: 50px;">-->
