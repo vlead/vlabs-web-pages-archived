@@ -113,12 +113,14 @@
         </thead>
         <tbody>
 	  <% _.each(target, function(key, value) {%>
+	  <% if (value != "VLEAD-IIITH"){ %>
           <tr>
 	    <td><%= value %></td>
             <td><%= (key.nc_count).toLocaleString() %></td>
 	    <td><%= (key.workshops).toLocaleString() %></td>
             <td><%= (key.usage).toLocaleString() %></td>
           </tr>
+	  <% } %>              
           <% }); %>
         </tbody>
       </table>
