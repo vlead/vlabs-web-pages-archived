@@ -147,7 +147,7 @@
         console.log("incoming Text " + jqxhr.responseText);
    });
 
-  var jqxhr = $.getJSON('http://localhost:5000/get_nc_wise_usage', function(data) {
+  var jqxhr = $.getJSON('http://outreach.base1.vlabs.ac.in/get_nc_wise_usage', function(data) {
   <!--alert("adfsdf");-->
   var data = { target: data };
   var template = _.template( $("#tpl-html3").text() );
@@ -175,7 +175,7 @@
     });
 
 
-  var jqxhr = $.getJSON('http://outreach-map.base4.vlabs.ac.in/get_outreach_analytics', function(data) {
+  var jqxhr = $.getJSON('http://outreach.base1.vlabs.ac.in/get_outreach_analytics', function(data) {
   var data = { target: data };
   var template = _.template( $("#tpl-html2").text() );
   $("#output3").html( template(data) );
