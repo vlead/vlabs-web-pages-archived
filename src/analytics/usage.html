@@ -25,17 +25,11 @@
     <title>analytics</title>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
-    <script type="text/javascript" src="https://raw.github.com/douglascrockford/JSON-js/master/json2.js"></script>
-    
- 
     <script type="text/template" id="tpl-html">
       <table class="table">
         <thead>
           <tr>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Lab Name</th>
-
-            <!--<th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Institute Name</th>-->
-
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Hits</th>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Visits</th>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Usage</th>
@@ -45,11 +39,10 @@
 	  <% _.each( target, function(i) {%>
 	  <% if ((i.lab_name !== "None") && (i.usage > 100)) { %>
           <tr>
-	    <td><%= i.lab_name %></td>
-            <!--<td><%= i.institute_name %></td>-->
-            <td><%= i.hits %></td>
-            <td><%= i.visits %></td>
-            <td><%= i.usage %></td>
+	    <td><%= (i.lab_name).toLocaleString() %></td>
+            <td><%= (i.hits).toLocaleString() %></td>
+            <td><%= (i.visits).toLocaleString() %></td>
+            <td><%= (i.usage).toLocaleString() %></td>
           </tr>
 	  <% } %>    
           <% }); %>
@@ -58,11 +51,86 @@
       <div id="output1"></div>
       
     </script>
+    <script type="text/template" id="tpl-html1">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Analytics</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Hits</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Visits</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Usage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Total Web Analytics</td>
+            <td><%= (target.hits).toLocaleString() %></td>
+            <td><%= (target.visits).toLocaleString() %></td>
+            <td><%= (target.usage).toLocaleString() %></td>
+          </tr>          
+        </tbody>
+      </table>
+      <div id="output2"></div>
+      
+    </script>
+    <script type="text/template" id="tpl-html2">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Analytics</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">No. of Nodal Centers</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">No. of Workshops</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">Workshop Usage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Total</td>
+            <td><%= (target.nodal_centres).toLocaleString() %></td>
+            <td><%= (target.workshops).toLocaleString() %></td>
+            <td><%= (target.usage).toLocaleString() %></td>
+            </tr>          
+        </tbody>
+      </table>
+      <div id="output3"></div>
+      
+    </script>
+    <script type="text/template" id="tpl-html3">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">Institute Name</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">Total No. Nodal Centres</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">Total No. of Workshops</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Usage</th>
+          </tr>
+        </thead>
+        <tbody>
+	  <% _.each(target, function(key, value) {%>
+	  <% if (value != "VLEAD-IIITH"){ %>
+          <tr>
+	    <td><%= value %></td>
+            <td><%= (key.nc_count).toLocaleString() %></td>
+	    <td><%= (key.workshops).toLocaleString() %></td>
+            <td><%= (key.usage).toLocaleString() %></td>
+          </tr>
+	  <% } %>              
+          <% }); %>
+        </tbody>
+      </table>
+      <div id="output4"></div>
+    
 </script>   
 <script>
          
   function generateTopLabs() {
-  $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
+  var jqxhr = $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
   var sorted_data = _.sortBy(data, 'usage');
   var reverse_data = sorted_data.reverse();
   var slice_data = reverse_data.slice(0,10)
@@ -73,26 +141,80 @@
   $("a").removeClass("btn-warning");
   $("#html").addClass("btn-warning");
   
-  });        
+  })
+  .error(function(jqxhr, textStatus, errorThrown) {
+        console.log("error " + textStatus);
+        console.log("incoming Text " + jqxhr.responseText);
+   });
+
+  var jqxhr = $.getJSON('http://outreach.base1.vlabs.ac.in/get_nc_wise_usage', function(data) {
+  <!--alert("adfsdf");-->
+  var data = { target: data };
+  var template = _.template( $("#tpl-html3").text() );
+  $("#output4").html( template(data) );
+  $("a").removeClass("btn-warning");
+  $("#html").addClass("btn-warning");
+  
+  })
+  .error(function(jqxhr, textStatus, errorThrown) {
+        console.log("error " + textStatus);
+        console.log("incoming Text " + jqxhr.responseText);
+   });
+
+  var jqxhr = $.getJSON('http://stats.vlabs.ac.in/analytics', function(data) {
+  var data = { target: data };
+  
+  var template = _.template( $("#tpl-html1").text() );
+  $("#output2").html( template(data) );
+  $("a").removeClass("btn-warning");
+  $("#html").addClass("btn-warning");  
+  })
+  .error(function(jqxhr, textStatus, errorThrown) {
+        console.log("error " + textStatus);
+        console.log("incoming Text " + jqxhr.responseText);
+    });
+
+
+  var jqxhr = $.getJSON('http://outreach.base1.vlabs.ac.in/get_outreach_analytics', function(data) {
+  var data = { target: data };
+  var template = _.template( $("#tpl-html2").text() );
+  $("#output3").html( template(data) );
+  $("a").removeClass("btn-warning");
+  $("#html").addClass("btn-warning");
+  })
+  .error(function(jqxhr, textStatus, errorThrown) {
+        console.log("error " + textStatus);
+        console.log("incoming Text " + jqxhr.responseText);
+    });
+  var date = new Date();
+  var dateString = (date.getDate() + '/'
+    + ('0' + (date.getMonth() + 1)).slice(-2)
+    + '/' + ('0' + (date.getFullYear())).slice(1));
+  document.getElementById("date").innerHTML = "Web Analytics as on "+dateString;
+  document.getElementById("date1").innerHTML = "Workshop Analytics as on "+dateString;
   }
   function generateAllLabs() {
-  $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
+  var jqxhr = $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
   var sorted_data = _.sortBy(data, 'usage');
   var reverse_data = sorted_data.reverse();
   var slice_data = reverse_data.slice(0,10)
   var remaining_data = _.difference(reverse_data, slice_data);
   var all_data = { target:remaining_data };
 
-  
   var template = _.template( $("#tpl-html").text() );
   $("#output1").html( template(all_data) );
   $("a").removeClass("btn-warning");
   $("#html").addClass("btn-warning");
 	    
-  });        
+  })
+  .error(function(jqxhr, textStatus, errorThrown) {
+        console.log("error " + textStatus);
+        console.log("incoming Text " + jqxhr.responseText);
+    });
+  
   }
 </script>
-	
+
 </head>
 <body id="page-top" class="index" onload="generateTopLabs()">
   <div id="top">
@@ -139,8 +261,6 @@
       <a href="../index.html#contact" class="menu-a" >CONTACT</a>
     </li>
 		</ul>
-		
-		
 			                	
 	      </div>
 	      <!-- /.navbar-collapse -->  
@@ -150,7 +270,7 @@
     </header>
     
     <div id="content">
-      <div class="container" >
+      <div class="container">
 	<div class="row">
 	  <hr style="background:#ff6600 !important;  height: 8px; margin-top: 0px;">
 	</div> <!-- row end -->
@@ -159,99 +279,106 @@
       
       <!-- =================================================================================================================================== -->
       <div class="container" >
-      <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Workshop Analytics</h2>
-      <div style="margin-bottom: 50px;">
-        <table class="table">
+	<h2 class="text-h2-lightblue" id="date1" style=" margin-bottom: 20px; margin-top:
+	30px; "></h2>
+        
+    <!--  <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top:
+      30px; ">Workshop Analytics as on 20/10/2016</h2>-->
+      <div id="output3"></div>
+
+     <!-- <div style="margin-bottom: 50px;">-->
+      <div class="container" >
+       <div id="output4"></div>        
+<!--        <table class="table">
         <thead>
           <tr>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Institute</th>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">No. of Nodal centers</th>
-            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Usages of Virtual Labs</th>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">No. of Workshops</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">Workshop Usage</th>
+
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>IIT-D</td>
             <td>70</td>
-            <td>115,303</td>
             <td>73</td>
+            <td>1,15,303</td>            
           </tr>
           <tr>
             <td>IIT-R</td>
             <td>35</td>
+            <td>30</td>            
             <td>27,920</td>
-            <td>30</td>
           </tr>
           <tr>
             <td>IIT-G</td>
             <td>18</td>
+            <td>10</td>            
             <td>37,476</td>
-            <td>10</td>
           </tr>
           <tr>
             <td>AMRITA</td>
             <td>82</td>
-            <td>201,117</td>
-            <td>80</td>
+            <td>80</td>            
+            <td>2,01,117</td>
           </tr>
           <tr>
             <td>IIT-K</td>
             <td>19</td>
+            <td>13</td>            
             <td>28,114</td>
-            <td>13</td>
           </tr>
           <tr>
             <td>IIT-B</td>
             <td>28</td>
+            <td>127</td>            
             <td>62,706</td>
-            <td>127</td>
           </tr>
           <tr>
             <td>DAYALBAGH</td>
             <td>5</td>
-            <td>9000</td>
-            <td>18</td>
+            <td>18</td>            
+            <td>9,000</td>
           </tr>
           <tr>
             <td>IIIT-H</td>
             <td>3</td>
+            <td>42</td>            
             <td>51,367</td>
-            <td>42</td>
           </tr>
           <tr>
             <td>IIT-KGP</td>
             <td>8</td>
+            <td>36</td>            
             <td>38,724</td>
-            <td>36</td>
           </tr>
           <tr>
             <td>NIT-K</td>
             <td>14</td>
-            <td>122,859</td>
-            <td>21</td>
+            <td>21</td>            
+            <td>1,22,859</td>
           </tr>
           <tr>
             <td>COE, Pune</td>
             <td>20</td>
+            <td>54</td>            
             <td>56,113</td>
-            <td>54</td>
-          </tr>
-          <tr>
-            <td>TOTAL</td>
-            <td>296</td>
-            <td>712,743</td>
-            <td>501</td>
           </tr>
         </tbody>
         </table>
+-->
       </div>
-	<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top:
-	30px; ">Web Analytics</h2>
-	<h2 class="text-h3-darkblue-bold" style="margin-top: 2px; ">Top 10 Labs</h2>
+	<h2 class="text-h2-lightblue" id="date" style=" margin-bottom: 20px; margin-top:
+	30px; "></h2>
+
 	<div>
 	  <div class="navbar-inner">
+            <div id="output2"></div>
 
+	    <h2 class="text-h3-darkblue-bold" style="margin-top: 2px; ">Top 10 Labs</h2>
 	    <div id="output"></div>
 	    <h2 class="text-h2-lightblue" id = "click"></h2> <a href="javascript:generateAllLabs()">Click Here to view More Labs</a>
 
@@ -345,42 +472,6 @@
 <!-- Custom Theme JavaScript -->
 <script src="js/custom.js"></script>
     
-<!-- Include js plugin -->
-<script src="vendors/owl-carousel/owl.carousel.js"></script>
+
 	
-<script type="text/javascript">
-  $(document).ready(function() {
-		 
-  var owl = $("#owl-demo");
-  owl.owlCarousel({
-  navigation: true,
-  navigationText: [
-  "<img src='../images/left-arrow.png'>",
-  "<img src='../images/right-arrow.png'>"
-  ],
-  /* autoPlay : 3000,
-  stopOnHover : true */
-  });
-  
-  //owl for partner institutions
-  var owl = $("#owl-partner-institutions");
-  owl.owlCarousel({
-  navigation: true,
-  navigationText: [
-  "<img src='../images/left-arrow.png'>",
-  "<img src='../images/right-arrow.png'>"
-  ],
-  autoPlay : 3000,
-  stopOnHover : true,
-  items : 8,
-  });
-  //owl for aboutus
-  var owl = $("#owl-aboutus");
-  owl.owlCarousel({
-  navigation: true,
-  singleItem:true
-  });
-  
-  });
-</script>
 </html>
