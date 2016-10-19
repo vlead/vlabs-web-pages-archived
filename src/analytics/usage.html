@@ -98,6 +98,31 @@
       <div id="output3"></div>
       
     </script>
+    <script type="text/template" id="tpl-html3">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">Institute Name</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">Total No. Nodal Centres</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">Total No. of Workshops</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Usage</th>
+          </tr>
+        </thead>
+        <tbody>
+	  <% _.each(target, function(key, value) {%>
+          <tr>
+	    <td><%= value %></td>
+            <td><%= (key.nc_count).toLocaleString() %></td>
+	    <td><%= (key.workshops).toLocaleString() %></td>
+            <td><%= (key.usage).toLocaleString() %></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+      <div id="output4"></div>
     
 </script>   
 <script>
@@ -119,7 +144,21 @@
         console.log("error " + textStatus);
         console.log("incoming Text " + jqxhr.responseText);
    });
+
+  var jqxhr = $.getJSON('http://localhost:5000/get_nc_wise_usage', function(data) {
+  <!--alert("adfsdf");-->
+  var data = { target: data };
+  var template = _.template( $("#tpl-html3").text() );
+  $("#output4").html( template(data) );
+  $("a").removeClass("btn-warning");
+  $("#html").addClass("btn-warning");
   
+  })
+  .error(function(jqxhr, textStatus, errorThrown) {
+        console.log("error " + textStatus);
+        console.log("incoming Text " + jqxhr.responseText);
+   });
+
   var jqxhr = $.getJSON('http://stats.vlabs.ac.in/analytics', function(data) {
   var data = { target: data };
   
@@ -242,8 +281,10 @@
       30px; ">Workshop Analytics as on 20/10/2016</h2>
       <div id="output3"></div>
 
-      <div style="margin-bottom: 50px;">
-        <table class="table">
+     <!-- <div style="margin-bottom: 50px;">-->
+      <div class="container" >
+       <div id="output4"></div>        
+<!--        <table class="table">
         <thead>
           <tr>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Institute</th>
@@ -323,6 +364,7 @@
           </tr>
         </tbody>
         </table>
+-->
       </div>
 	<h2 class="text-h2-lightblue" id="date" style=" margin-bottom: 20px; margin-top:
 	30px; "></h2>
