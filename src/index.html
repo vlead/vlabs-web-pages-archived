@@ -33,12 +33,24 @@
 -->
 	<script type="text/javascript" language="javascript">
       window.onload = function() {
-      $.getJSON('http://stats.vlabs.ac.in/analytics', function(data) {
+      var jqxhr = $.getJSON('http://stats.vlabs.ac.in/analytics', function(data) {
       var visit = data["visits"] ;
       $("#visits").html(visit.toString().slice(0,2)+","+visit.toString().slice(2,4)+","+visit.toString().slice(4,7));
-      //$("#usage").html(data["usage"]);
-
+      })
+      .error(function(jqxhr, textStatus, errorThrown) {
+        console.log("error " + textStatus);
+        console.log("incoming Text " + jqxhr.responseText);
       });
+      
+      var jqxhr = $.getJSON('http://outreach-map.base4.vlabs.ac.in/get_outreach_analytics', function(data) {
+  var usage = data["usage"];
+  $("#usage").html(usage);
+  })
+  .error(function(jqxhr, textStatus, errorThrown) {
+        console.log("error " + textStatus);
+        console.log("incoming Text " + jqxhr.responseText);
+  });
+
       };
       function myFunction() {
       window.open("./analytics/usage.html");
@@ -122,16 +134,16 @@
 
 						<div class="baneer-text-sub-div banner-text-3">
 							<span class="banner-text-small">Visits</span> <span id="visits" class="banner-text-big"></span> <sup class="banner-text-medium">+</sup>
-<!--
+
 						</div>
 						<div class="baneer-text-sub-div banner-text-4">
-							<span class="banner-text-small" onclick="myFunction()" style="cursor:pointer">Usage</span> <span id="usage" class="banner-text-big">3,70,223</span> <sup class="banner-text-medium">+</sup>
--->
+						  <span class="banner-text-small" onclick="myFunction()" style="cursor:pointer">Usage</span> <span id="usage" class="banner-text-big"></span> <sup class="banner-text-medium">+</sup>
+
 						</div>
 
- 						<div class="baneer-text-sub-div banner-text-4">
+ 					<!--	<div class="baneer-text-sub-div banner-text-4">
                                                         <span class="banner-text-small" onclick="myFunction()" style="cursor:pointer">Usage</span> <span id="usage" class="banner-text-big">7,12,743</span> <sup class="banner-text-medium">+</sup>
-						</div>
+						</div>-->
 					<!--	<div class="baneer-text-sub-div banner-text-4">
 							<span class="banner-text-small" onclick="myFunction()">Usage</span> <span id="usage" class="banner-text-big">1784</span> <sup class="banner-text-medium">+</sup>
 						</div>-->
