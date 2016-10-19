@@ -44,7 +44,7 @@
       
       var jqxhr = $.getJSON('http://outreach.base1.vlabs.ac.in/get_outreach_analytics', function(data) {
   var usage = data["usage"];
-  $("#usage").html(usage);
+  $("#usage").html(usage.toLocaleString());
   })
   .error(function(jqxhr, textStatus, errorThrown) {
         console.log("error " + textStatus);
