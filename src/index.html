@@ -42,7 +42,7 @@
         console.log("incoming Text " + jqxhr.responseText);
       });
       
-      var jqxhr = $.getJSON('http://outreach-map.base4.vlabs.ac.in/get_outreach_analytics', function(data) {
+      var jqxhr = $.getJSON('http://outreach.base1.vlabs.ac.in/get_outreach_analytics', function(data) {
   var usage = data["usage"];
   $("#usage").html(usage);
   })

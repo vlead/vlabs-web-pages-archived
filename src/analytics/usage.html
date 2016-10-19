@@ -113,12 +113,14 @@
         </thead>
         <tbody>
 	  <% _.each(target, function(key, value) {%>
+	  <% if (value != "VLEAD-IIITH"){ %>
           <tr>
 	    <td><%= value %></td>
             <td><%= (key.nc_count).toLocaleString() %></td>
 	    <td><%= (key.workshops).toLocaleString() %></td>
             <td><%= (key.usage).toLocaleString() %></td>
           </tr>
+	  <% } %>              
           <% }); %>
         </tbody>
       </table>
@@ -145,7 +147,7 @@
         console.log("incoming Text " + jqxhr.responseText);
    });
 
-  var jqxhr = $.getJSON('http://localhost:5000/get_nc_wise_usage', function(data) {
+  var jqxhr = $.getJSON('http://outreach.base1.vlabs.ac.in/get_nc_wise_usage', function(data) {
   <!--alert("adfsdf");-->
   var data = { target: data };
   var template = _.template( $("#tpl-html3").text() );
@@ -173,7 +175,7 @@
     });
 
 
-  var jqxhr = $.getJSON('http://outreach-map.base4.vlabs.ac.in/get_outreach_analytics', function(data) {
+  var jqxhr = $.getJSON('http://outreach.base1.vlabs.ac.in/get_outreach_analytics', function(data) {
   var data = { target: data };
   var template = _.template( $("#tpl-html2").text() );
   $("#output3").html( template(data) );
@@ -189,7 +191,7 @@
     + ('0' + (date.getMonth() + 1)).slice(-2)
     + '/' + ('0' + (date.getFullYear())).slice(1));
   document.getElementById("date").innerHTML = "Web Analytics as on "+dateString;
-
+  document.getElementById("date1").innerHTML = "Workshop Analytics as on "+dateString;
   }
   function generateAllLabs() {
   var jqxhr = $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
@@ -277,8 +279,11 @@
       
       <!-- =================================================================================================================================== -->
       <div class="container" >
-      <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top:
-      30px; ">Workshop Analytics as on 20/10/2016</h2>
+	<h2 class="text-h2-lightblue" id="date1" style=" margin-bottom: 20px; margin-top:
+	30px; "></h2>
+        
+    <!--  <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top:
+      30px; ">Workshop Analytics as on 20/10/2016</h2>-->
       <div id="output3"></div>
 
      <!-- <div style="margin-bottom: 50px;">-->
