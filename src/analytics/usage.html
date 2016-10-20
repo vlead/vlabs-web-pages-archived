@@ -147,7 +147,7 @@
         console.log("incoming Text " + jqxhr.responseText);
    });
 
-  var jqxhr = $.getJSON('https://outreach-stage.vlabs.ac.in/get_nc_wise_usage', function(data) {
+  var jqxhr = $.getJSON('https://outreach.vlabs.ac.in/get_nc_wise_usage', function(data) {
   var data = { target: data };
   var template = _.template( $("#tpl-html3").text() );
   $("#output4").html( template(data) );
