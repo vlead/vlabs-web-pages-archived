@@ -130,7 +130,7 @@
 <script>
          
   function generateTopLabs() {
-  var jqxhr = $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
+  var jqxhr = $.getJSON('https://stats.vlabs.ac.in/analytics/labs', function(data) {
   var sorted_data = _.sortBy(data, 'usage');
   var reverse_data = sorted_data.reverse();
   var slice_data = reverse_data.slice(0,10)
@@ -160,7 +160,7 @@
         console.log("incoming Text " + jqxhr.responseText);
    });
 
-  var jqxhr = $.getJSON('http://stats.vlabs.ac.in/analytics', function(data) {
+  var jqxhr = $.getJSON('https://stats.vlabs.ac.in/analytics', function(data) {
   var data = { target: data };
   
   var template = _.template( $("#tpl-html1").text() );
@@ -174,7 +174,7 @@
     });
 
 
-  var jqxhr = $.getJSON('http://outreach.base1.vlabs.ac.in/get_outreach_analytics', function(data) {
+  var jqxhr = $.getJSON('https://outreach.vlabs.ac.in/get_outreach_analytics', function(data) {
   var data = { target: data };
   var template = _.template( $("#tpl-html2").text() );
   $("#output3").html( template(data) );
@@ -193,7 +193,7 @@
   document.getElementById("date1").innerHTML = "Workshop Analytics as on "+dateString;
   }
   function generateAllLabs() {
-  var jqxhr = $.getJSON('http://stats.vlabs.ac.in/analytics/labs', function(data) {
+  var jqxhr = $.getJSON('https://stats.vlabs.ac.in/analytics/labs', function(data) {
   var sorted_data = _.sortBy(data, 'usage');
   var reverse_data = sorted_data.reverse();
   var slice_data = reverse_data.slice(0,10)
