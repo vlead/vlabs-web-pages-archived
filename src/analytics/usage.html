@@ -147,8 +147,7 @@
         console.log("incoming Text " + jqxhr.responseText);
    });
 
-  var jqxhr = $.getJSON('http://outreach.base1.vlabs.ac.in/get_nc_wise_usage', function(data) {
-  <!--alert("adfsdf");-->
+  var jqxhr = $.getJSON('http://outreach-stage.vlabs.ac.in/get_nc_wise_usage', function(data) {
   var data = { target: data };
   var template = _.template( $("#tpl-html3").text() );
   $("#output4").html( template(data) );
@@ -292,80 +291,75 @@
 <!--        <table class="table">
         <thead>
           <tr>
-            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">Institute</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top:
+            2px;">Institute Name</th>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">No. of Nodal centers</th>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px;">No. of Workshops</th>
             <th class = "text-h3-darkblue-bold" style= "margin-top:
-            2px;">Workshop Usage</th>
+            2px;">Usage</th>
 
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>IIT-D</td>
-            <td>70</td>
-            <td>73</td>
-            <td>1,15,303</td>            
-          </tr>
-          <tr>
-            <td>IIT-R</td>
-            <td>35</td>
-            <td>30</td>            
-            <td>27,920</td>
-          </tr>
-          <tr>
-            <td>IIT-G</td>
-            <td>18</td>
-            <td>10</td>            
-            <td>37,476</td>
-          </tr>
-          <tr>
-            <td>AMRITA</td>
-            <td>82</td>
-            <td>80</td>            
-            <td>2,01,117</td>
-          </tr>
-          <tr>
-            <td>IIT-K</td>
-            <td>19</td>
-            <td>13</td>            
-            <td>28,114</td>
-          </tr>
-          <tr>
-            <td>IIT-B</td>
-            <td>28</td>
-            <td>127</td>            
-            <td>62,706</td>
-          </tr>
-          <tr>
-            <td>DAYALBAGH</td>
-            <td>5</td>
-            <td>18</td>            
-            <td>9,000</td>
-          </tr>
-          <tr>
-            <td>IIIT-H</td>
-            <td>3</td>
-            <td>42</td>            
-            <td>51,367</td>
-          </tr>
-          <tr>
-            <td>IIT-KGP</td>
-            <td>8</td>
-            <td>36</td>            
-            <td>38,724</td>
-          </tr>
-          <tr>
-            <td>NIT-K</td>
-            <td>14</td>
-            <td>21</td>            
-            <td>1,22,859</td>
-          </tr>
-          <tr>
-            <td>COE, Pune</td>
+            <td>College of Engineering, Pune</td>
+            <td>27</td>
             <td>20</td>
-            <td>54</td>            
-            <td>56,113</td>
+            <td>168</td>            
+          </tr>
+          <tr>
+            <td>DEI Dayalbagh</td>
+            <td>11</td>
+            <td>17</td>            
+            <td>136</td>
+          </tr>
+          <tr>
+            <td>IIIT Hyderabad</td>
+            <td>47</td>
+            <td>31</td>            
+            <td>31,548</td>
+          </tr>
+          <tr>
+            <td>IIT Bombay</td>
+            <td>45</td>
+            <td>344</td>            
+            <td>1,50,252</td>
+          </tr>
+          <tr>
+            <td>IIT Delhi</td>
+            <td>70</td>
+            <td>81</td>            
+            <td>1,71,073</td>
+          </tr>
+          <tr>
+            <td>IIT Guwahati</td>
+            <td>19</td>
+            <td>14</td>            
+            <td>660</td>
+          </tr>
+          <tr>
+            <td>IIT Kanpur</td>
+            <td>25</td>
+            <td>21</td>            
+            <td>445</td>
+          </tr>
+          <tr>
+            <td>IIT Kharagpur</td>
+            <td>11</td>
+            <td>44</td>            
+            <td>686</td>
+          </tr>
+          <tr>
+            <td>IIT Roorkee</td>
+            <td>37</td>
+            <td>43</td>            
+            <td>3,93,464</td>
+          </tr>
+          <tr>
+            <td>NITK Surathkal</td>
+            <td>29</td>
+            <td>66</td>            
+            <td>1,629</td>
           </tr>
         </tbody>
         </table>
