@@ -33,7 +33,7 @@
 -->
 	<script type="text/javascript" language="javascript">
       window.onload = function() {
-      var jqxhr = $.getJSON('http://stats.vlabs.ac.in/analytics', function(data) {
+      var jqxhr = $.getJSON('https://stats.vlabs.ac.in/analytics', function(data) {
       var visit = data["visits"] ;
       $("#visits").html(visit.toString().slice(0,2)+","+visit.toString().slice(2,4)+","+visit.toString().slice(4,7));
       })
