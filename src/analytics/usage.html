@@ -147,7 +147,7 @@
         console.log("incoming Text " + jqxhr.responseText);
    });
 
-  var jqxhr = $.getJSON('https://outreach.vlabs.ac.in/get_nc_wise_usage', function(data) {
+  var jqxhr = $.getJSON('http://outreach.base1.vlabs.ac.in/get_nc_wise_usage', function(data) {
   var data = { target: data };
   var template = _.template( $("#tpl-html3").text() );
   $("#output4").html( template(data) );
@@ -287,8 +287,9 @@
 
      <!-- <div style="margin-bottom: 50px;">-->
       <div class="container" >
-<!--       <div id="output4"></div>        -->
-        <table class="table">
+        <div id="output4"></div>
+        
+      <!--  <table class="table">
         <thead>
           <tr>
             <th class = "text-h3-darkblue-bold" style= "margin-top:
@@ -368,7 +369,7 @@
           </tr>
         </tbody>
         </table>
-
+-->
       </div>
 	<h2 class="text-h2-lightblue" id="date" style=" margin-bottom: 20px; margin-top:
 	30px; "></h2>
